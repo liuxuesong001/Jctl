@@ -1,0 +1,18 @@
+<LinearLayout
+    android:id="@+id/list_item_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/margin_56dp"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+
+    <CheckBox
+        android:id="@+id/early_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:clickable="false"/>
+</LinearLayout>

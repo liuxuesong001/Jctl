@@ -1,0 +1,351 @@
+<resources>
+    <string name="app_name">智慧农业</string>
+    <string name="bar_title">Title</string>
+    <string name="entry">立即体验</string>
+
+    <string name="please_wait">请稍后...</string>
+
+    <!--首页-->
+    <string name="home">首页</string>
+    <string name="early">预警</string>
+    <string name="mine">我的</string>
+    <string name="more">更多</string>
+
+    <!--摄像头-->
+    <string name="sxtgc">摄像头广场</string>
+    <string name="max">放大</string>
+    <string name="min">缩小</string>
+    <string name="shang">上</string>
+    <string name="xia">下</string>
+    <string name="zuo">左</string>
+    <string name="you">右</string>
+    <string name="stop">停止</string>
+
+    <!--登录-->
+    <string name="login_hint_uesr">用户名</string>
+    <string name="login_hint_pass">密  码</string>
+    <string name="login_test_jzpass">记住密码</string>
+    <string name="login_test_wjpass">忘记密码</string>
+    <string name="login_btn">登  录</string>
+    <string name="please_login">请先登录</string>
+    <!--注册-->
+    <string name="reg_hint_mobile">手机号</string>
+    <string name="reg_hint_setpass">设置密码</string>
+    <string name="reg_hint_setcode">验证码</string>
+    <string name="reg_hint_sendcode">发送验证码</string>
+    <string name="login_reg">注  册</string>
+    <!--管理 页-->
+
+    <string name="text_ncgl">农场管理</string>
+    <string name="text_sbgl">设备管理</string>
+    <string name="text_rygl">人员管理</string>
+    <string name="text_spjk">视频监控</string>
+    <string name="text_h_gd">更多</string>
+    <string name="tv_xwdt">新闻动态</string>
+    <string name="text_h_new_a">2017年财政农业工作发力点明确孙大圣大阿斯大时代</string>
+    <string name="text_h_new_a_date">2017年3月13日 09:00</string>
+    <string name="text_h_new_a_content">2017年是 “十三五” 规划的重要一年，是提供给侧结构性改革的深化之年。</string>
+    <string name="text_h_new_b">60万亿大产业即将爆发: 是一个足以阿斯打死打伤打上的</string>
+    <string name="text_h_new_b_date">2017年3月13日 09:00</string>
+    <string name="text_h_new_b_content">李彦宏说，移动互联网的时代结束了。周鸿伟说，互联网下半场就要开启。</string>
+    <string name="tqxq">天气详情</string>
+
+    <string name="tv_cp">产品</string>
+    <string name="tv_jg">价格</string>
+    <string name="tv_scmc">市场名称</string>
+    <string name="tv_rq">日期</string>
+    <string name="tv_new_info">文章来源:集萃通联</string>
+
+
+    <string name="tv_hb">华北</string>
+    <string name="tv_hd">华东</string>
+    <string name="tv_hn">华南</string>
+    <string name="tv_hz">华中</string>
+    <string name="tv_xb">西北</string>
+    <string name="tv_xn">西南</string>
+    <string name="tv_db">东北</string>
+
+    <!--预警-->
+    <string name="early_yj">预警</string>
+    <string name="early_qx">全选</string>
+    <string name="early_gl">管理</string>
+    <string name="tv_qxiao">取消</string>
+    <string name="early_jsnr">警示内容:</string>
+    <string name="early_delete">删除</string>
+    <string name="early_zw">暂无预警消息</string>
+    <string name="early_usezw">您还没有登录,无法查看预警消息</string>
+    <string name="early_jkz">监控预警中...</string>
+    <string name="early_allclear">全部清空</string>
+
+    <!--Mine 页-->
+    <string name="mine_wd">我的</string>
+    <string name="mine_dl">登录</string>
+    <string name="mine_zc">注册</string>
+    <string name="mine_fuhao"> | </string>
+    <string name="mine_next">下一步</string>
+    <string name="mine_ncgl">农场管理</string>
+    <string name="mine_ntgl">农田管理</string>
+    <string name="mine_zjgl">中继管理</string>
+    <string name="mine_jdgl">节点管理</string>
+    <string name="mine_zlk">资料卡</string>
+    <string name="mine_name">姓名</string>
+    <string name="mine_sex">性别</string>
+    <string name="mine_age">年龄</string>
+    <string name="mine_address">地址</string>
+    <string name="mine_nan">男</string>
+    <string name="mine_nv">女</string>
+    <string name="mine_xt">选填</string>
+    <string name="mine_wc">完成</string>
+    <string name="mine_xxzc">信息注册</string>
+    <string name="mine_mobile">手机号</string>
+    <string name="mine_setpass">设置密码</string>
+    <string name="mine_qrpass">确认密码</string>
+    <string name="mine_code">验证码</string>
+    <string name="mine_sendcode">发送验证码</string>
+    <string name="mobile_consent_text">我已阅读并同意《用户使用协议》</string>
+    <string name="mine_welcome">欢迎您的加入</string>
+    <string name="mine_welcome_content">为了更好的帮助您管理您的农场和农田请花一分钟时间帮助我们进一步了解你请选择角色!</string>
+    <string name="mine_fram">(农场主)</string>
+    <string name="mine_boor">(农户)</string>
+    <string name="mine_help">帮助中心</string>
+    <string name="mine_wdsc">我的收藏</string>
+    <string name="mine_grzl">个人资料</string>
+    <string name="mine_bj">编辑</string>
+    <string name="mine_yhzh">用户帐户</string>
+    <string name="mine_yhlx">用户类型</string>
+    <string name="mine_nestpad">Nestpad数量</string>
+    <string name="mine_nhsl">农户数量</string>
+    <string name="mine_zhmm">找回密码</string>
+    <string name="mine_tj">提交</string>
+    <string name="mine_gsmc">公司名称</string>
+    <string name="mine_ceaddress">"北京市"\t"丰台区"\t"马家堡东路"\t"供销宏泰大厦"</string>
+    <string name="login_success">"登录成功"</string>
+
+    <!--更多-->
+    <string name="more_gd">更多</string>
+    <string name="more_tcdl">退出登录</string>
+    <string name="more_xxtz">消息通知</string>
+    <string name="newinfo_newinfotv">接收新消息通知</string>
+    <string name="more_newinfo">新消息提醒</string>
+    <string name="more_yjfk">意见反馈</string>
+    <string name="more_gymw">关于我们</string>
+    <string name="more_xgmm">修改密码</string>
+    <string name="newinfo_sound">声音</string>
+    <string name="newinfo_shake">震动</string>
+    <string name="tv_dialog_hc">确定清除缓存吗？</string>
+    <string name="tv_qd">确定</string>
+    <string name="feed_hint">请写下您的意见，您的意见对我们非常重要!</string>
+    <string name="change_hint_mobile">请输入您的手机号</string>
+    <string name="change_hint_pass">请输入您的新密码</string>
+    <string name="change_hint_passqr">确认新密码</string>
+    <string name="change_hint_code">输入验证码</string>
+    <string name="tv_exit">确定退出登录？</string>
+    <string name="tv_please">请登录</string>
+     <string name="tv_update_a">
+        已更新至新版本1.2.0
+    </string>
+    <string name="tv_update_b">
+        "1.性能优化\n"
+        "2.修复已知Bug"
+    </string>
+    <!--农场-->
+    <string name="tv_farm_search">农场名</string>
+    <string name="tv_farm_xq">农场详情</string>
+    <string name="tv_add_farm">添加农场</string>
+    <string name="tv_field_search">农田名/作物</string>
+    <string name="tv_facilit_search">中继编号</string>
+    <string name="tv_farm_name">农场名</string>
+    <string name="tv_farm_address">地址</string>
+    <string name="tv_farm_num">农场数量</string>
+    <string name="tv_farm_crop">作物</string>
+    <string name="tv_farm_number">农场编号</string>
+    <string name="tv_farm_names">农场名称</string>
+    <string name="tv_farm_area">农场面积(亩)</string>
+    <string name="tv_farm_kind">种植种类</string>
+    <string name="tv_farmdetail_num">编号</string>
+    <string name="tv_farmdetail_area">面积(亩)</string>
+    <string name="tv_farmdetail_kind">作物种类</string>
+    <string name="tv_farmdetail_whom">所属人</string>
+    <string name="tv_zjsl">中继数量</string>
+    <string name="tv_end">--已全部加载完成.--</string>
+    <string name="tv_ending">加载完成</string>
+    <string name="tv_zwxx">作物信息</string>
+    <!--农田-->
+    <string name="tv_sxnt">所辖农田</string>
+    <string name="tv_tjnt">添加农田</string>
+    <string name="tv_field_name">农田名</string>
+    <string name="tv_node">节点</string>
+    <string name="tv_field_ntbh">农田编号</string>
+    <string name="tv_btlb">农田列表</string>
+    <string name="tv_bm">别名</string>
+    <string name="tv_nh">农户</string>
+    <string name="tv_lx">类型</string>
+    <string name="tv_fpsj">分配时间</string>
+    <string name="tv_ssnc">所属农场</string>
+    <string name="tv_ssnt">所属农田</string>
+    <string name="tv_wz">位置</string>
+    <string name="tv_sszj">所属中继</string>
+    <string name="tv_jdsl">节点数量</string>
+    <string name="tv_zwm">作物名</string>
+    <string name="tv_tjsj">当前数据时间</string>
+    <string name="tv_tjren">添加人</string>
+    <string name="tv_xgsj">修改时间</string>
+    <string name="tv_xgren">修改人</string>
+    <string name="tv_ncz">农场主</string>
+    <string name="tv_jj">农场简介</string>
+    <string name="tv_dqsxzq">当前刷新周期:</string>
+    <string name="tv_ntjj">农田简介</string>
+    <!--设备管理-->
+    <string name="tv_jzxq">中继详情</string>
+    <string name="tv_zjbh">中继编号</string>
+    <string name="tv_zjmc">中继名称</string>
+    <string name="tv_dl">电量</string>
+    <string name="tv_zjbdsj">中继绑定时间</string>
+    <string name="tv_gzjdsl">挂载节点数量</string>
+    <string name="tv_jd">经度</string>
+    <string name="tv_wdu">纬度</string>
+    <string name="tv_dlwz">地理位置</string>
+    <string name="tv_bssj">布设时间</string>
+    <string name="tv_jdbh">节点编号</string>
+    <string name="tv_ssnh">所属农户</string>
+    <string name="tv_syr">所有人</string>
+    <string name="tv_gl">管理</string>
+    <string name="tv_tjzj">添加中继</string>
+    <string name="tv_xzrq">选择日期</string>
+
+    <!--节点-->
+
+    <string name="tv_jdmc">节点名称</string>
+    <string name="tv_jdxq">节点详情</string>
+    <string name="tv_sblx">设备类型</string>
+    <string name="tv_sbmc">设备名称</string>
+    <string name="tv_kgmc">开关名称</string>
+    <string name="tv_syren">使用人</string>
+    <string name="tv_sjcjzq">数据采集周期</string>
+    <string name="tv_jssj">架设时间</string>
+    <string name="tv_kqwd">空气温度</string>
+    <string name="tv_kqsd">空气湿度</string>
+    <string name="tv_gz">光照</string>
+    <string name="tv_eyht">二氧化碳</string>
+    <string name="tv_onewd">1号土壤温度</string>
+    <string name="tv_onesd">1号土壤湿度</string>
+    <string name="tv_twowd">2号土壤温度</string>
+    <string name="tv_twosd">2号土壤湿度</string>
+    <string name="tv_threewd">3号土壤温度</string>
+    <string name="tv_threesd">3号土壤湿度</string>
+    <string name="tv_k">开关</string>
+    <string name="tv_szjl">生长记录</string>
+    <string name="tv_day">日</string>
+    <string name="tv_month">月</string>
+    <string name="tv_quarter">生长季</string>
+    <string name="tv_max">最大值</string>
+    <string name="tv_min">最小值</string>
+    <string name="tv_djszon">点击设置(开启策略)</string>
+    <string name="tv_djszoff">点击设置(关闭策略)</string>
+
+
+    <string name="tv_xh">序号</string>
+    <string name="tv_nodeid">节点id</string>
+    <string name="tv_sjlxid">数据类型id</string>
+    <string name="tv_dqsd">大气湿度</string>
+    <string name="tv_dqwd">大气温度</string>
+    <string name="tv_ajbwd">1号菌棒温度</string>
+    <string name="tv_ajbsd">1号菌棒湿度</string>
+    <string name="tv_bjbwd">2号菌棒温度</string>
+    <string name="tv_bjbsd">2号菌棒湿度</string>
+    <string name="tv_cjbwd">3号菌棒温度</string>
+    <string name="tv_cjbsd">3号菌棒湿度</string>
+    <string name="tv_eyhtnd">二氧化碳浓度</string>
+    <string name="tv_kgzt">开关状态</string>
+
+
+    <string name="tv_kgkz">开关控制</string>
+    <string name="tv_zqsx">周期刷新</string>
+    <string name="tv_zqkz">周期控制</string>
+    <string name="tv_znkz">智能控制</string>
+    <string name="tv_sdkz">手动控制</string>
+    <string name="tv_cf">重复</string>
+    <string name="tv_sx">属性</string>
+    <string name="tv_zgzs">最高指数</string>
+    <string name="tv_zdzs">最低指数</string>
+    <string name="tv_yczq">异常周期</string>
+    <string name="tv_rqhsj">日期和时间</string>
+    <string name="tv_dw">单位</string>
+    <!--<string name="tv_0530">05:30</string>-->
+    <!--<string name="tv_mt">每天</string>-->
+    <!--<string name="tv_1630">16:30</string>-->
+    <!--<string name="tv_zhouji">"周一"\t"周二"\t"周三"\t"周四"</string>-->
+
+    <!--人员管理-->
+    <string name="tv_rygl">人员管理</string>
+    <string name="tv_nhm">农户名</string>
+    <string name="tv_gj">管家</string>
+    <string name="tv_gjxm">管家姓名</string>
+    <string name="tv_glnc">管理农场</string>
+    <string name="tv_fyzmgncz">发验证码给农场主</string>
+    <string name="tv_nhxm">农户姓名</string>
+    <string name="tv_sxtsl">摄像头数量</string>
+    <string name="tv_tjia">添加</string>
+
+
+    <string name="hint_farm_number">请填写农场编号</string>
+    <string name="hint_fiedl_ntbh">请填写农田编号</string>
+    <string name="hint_farm_names">请填写农场名称</string>
+    <string name="hint_farm_crea">请填写农场面积</string>
+    <string name="hint_fiedl_crea">请填写农田面积</string>
+    <string name="hint_fiedl_addr">请填写您的地址</string>
+    <string name="hint_farm_kind">请填写种植种类</string>
+    <string name="hint_fiedl_bm">请填写农田别名</string>
+    <string name="hint_fiedl_nh">请填写农户名</string>
+    <string name="hint_fiedl_ncz">请填写农场主</string>
+    <string name="hint_fiedl_lx">请填写农田类型</string>
+    <string name="hint_fiedl_crop">请填写农田作物</string>
+    <string name="hint_fiedl_jdmc">请填写节点名称</string>
+    <string name="hint_fiedl_jdsl">请填写节点数量</string>
+    <string name="hint_intel_zq">请输入分钟数</string>
+    <string name="hint_addrelay_zjbh">请填写中继编号</string>
+    <string name="hint_addnode_sbmc">请填写设备名称</string>
+    <string name="hint_addnode_kgmc">请填写开关名称</string>
+    <string name="hint_addrelay_ssr">请填写中继所属人</string>
+    <string name="hint_addrelay_jd">请填写经度</string>
+    <string name="hint_addrelay_wd">请填写纬度</string>
+    <string name="hint_fiedl_ncjj">请填写农场简介</string>
+    <string name="hint_kz_max">请填写最高指数</string>
+    <string name="hint_kz_mix">请填写最低指数</string>
+    <string name="hint_kz_zqzs">请填写周期指数</string>
+    <string name="hint_ncjj">请填写您的农场简介</string>
+
+
+    <string name="loading">加载中…</string>
+    <string name="notice">重要公告</string>
+
+
+    <!--Vollry-->
+    <string name="toast_networkError">请求失败</string>
+
+    <string name="abous_as">
+        "\t北京集萃通联科技有限公司,集资源,萃精华,通万物,联未来,致力于成为领先的智慧互联应用解决方案提供商。推出"
+        "智慧谷云平台及应用系统为核心的集成解决方案。该方案集成"
+        "智能设备、物联网、云计算、大数据和APP应用等行业先进技"
+        "术与产品,形成满足智慧农业,智慧水务、智慧城市、智慧社"
+        "区、智能家居等业务需求的统一规划且易扩展的生态平台,共"
+        "创智联世界,美好生活！\n\n"
+        "\tBeijing getrain Communications Technology Co., a set of"
+        "resources, extracts through all things together in the future,"
+        "to become the wisdom of the Internet application leading"
+        "solutions provider. Smart Valley cloud platform and application"
+        "system as the core of integrated solutions. The integration"
+        "of intelligent devices, networking, cloud computing, big"
+        "data and APP applications and other advanced technology"
+        "industries and products, formed to meet the wisdom of"
+        "agriculture, water wisdom, wisdom, wisdom, smart city"
+        "community Home Furnishing business needs unified planning"
+        "and easy expansion of the ecological platform, to create the"
+        "world, a better life!"
+    </string>
+    <string name="title_activity_asd">asd</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="title_activity_onboarding">OnboardingActivity</string>
+</resources>

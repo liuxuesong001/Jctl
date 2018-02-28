@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/include_titlebar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/margin_10dp"
+        android:paddingBottom="@dimen/margin_10dp"
+        android:paddingLeft="@dimen/margin_15dp"
+        android:paddingRight="@dimen/margin_15dp"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/farm_sv"
+            android:layout_width="match_parent"
+            android:iconifiedByDefault="false"
+            android:queryHint="@string/tv_farm_search"
+            android:background="@drawable/shape_ecece"
+            android:layout_height="@dimen/margin_50dp">
+        </android.support.v7.widget.SearchView>
+
+    </LinearLayout>
+
+    <include layout="@layout/include_farmlabel_layout"></include>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/node_sr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/node_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

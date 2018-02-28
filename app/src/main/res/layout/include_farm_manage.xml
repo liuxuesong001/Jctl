@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:gravity="left"
+              android:id="@+id/ll_adapter_bj"
+              android:descendantFocusability="blocksDescendants"
+              android:paddingRight="@dimen/margin_10dp"
+              android:paddingLeft="@dimen/margin_10dp"
+              android:layout_height="@dimen/margin_40dp">
+
+    <LinearLayout
+        android:id="@+id/farm_ll_a"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:background="@drawable/selector_include_farm"
+        android:layout_height="20dp">
+
+        <CheckBox
+            android:visibility="gone"
+            android:id="@+id/steward_checkbox"
+            android:layout_width="@dimen/margin_15dp"
+            android:layout_gravity="center"
+            android:button="@null"
+            android:gravity="left"
+            android:background="@drawable/checkbox_style_early"
+            android:layout_height="@dimen/margin_15dp"/>
+
+        <com.colud.jctl.ui.custom.MyTextView
+            android:id="@+id/farm_item_name"
+            android:layout_width="@dimen/margin_60dp"
+            android:gravity="center"
+            android:text="@string/tv_farm_name"
+            android:singleLine="true"
+            android:focusable="true"
+            android:marqueeRepeatLimit="-1"
+            android:ellipsize="marquee"
+            android:textColor="@color/color_343434"
+            android:textSize="@dimen/sp_font_12"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/include_in"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/farm_ll_b"
+        android:layout_width="0dp"
+        android:orientation="horizontal"
+        android:background="@drawable/selector_include_farm"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/margin_20dp">
+
+        <com.colud.jctl.ui.custom.MyTextView
+            android:id="@+id/farm_item_address"
+            android:layout_width="@dimen/margin_60dp"
+            android:gravity="center"
+            android:text="@string/tv_farm_address"
+            android:singleLine="true"
+            android:focusable="true"
+            android:marqueeRepeatLimit="-1"
+            android:ellipsize="marquee"
+            android:textColor="@color/color_343434"
+            android:textSize="@dimen/sp_font_12"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/include_in"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/farm_ll_c"
+        android:background="@drawable/selector_include_farm"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_height="@dimen/margin_20dp">
+
+        <TextView
+            android:id="@+id/farm_item_num"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:text="@string/tv_farm_num"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/color_343434"
+            android:textSize="@dimen/sp_font_12"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:src="@drawable/include_in"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/farm_ll_d"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/selector_include_farm"
+        android:layout_height="@dimen/margin_20dp">
+
+        <com.colud.jctl.ui.custom.MyTextView
+            android:id="@+id/farm_item_crop"
+            android:layout_width="@dimen/margin_60dp"
+            android:gravity="center"
+            android:text="@string/tv_farm_crop"
+            android:singleLine="true"
+            android:focusable="true"
+            android:marqueeRepeatLimit="-1"
+            android:ellipsize="marquee"
+            android:textColor="@color/color_343434"
+            android:textSize="@dimen/sp_font_12"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/include_in"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

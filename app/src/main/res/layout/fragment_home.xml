@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <!--<View-->
+    <!--android:id="@+id/status_bar"-->
+    <!--android:background="@color/color_3AB07D"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:visibility="gone"-->
+    <!--android:layout_height="@dimen/margin_15dp"/>-->
+
+    <!--<include layout="@layout/include_home_titlebar" android:visibility="gone"> </include>-->
+
+    <include layout="@layout/include_toolbar_viewpager"> </include>
+
+    <!--<com.colud.jctl.ui.custom.MyToolbar-->
+    <!--android:id="@+id/mytoolbar"-->
+    <!--style="@style/mytoolbarStyleGreen">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:id="@+id/title_img"-->
+    <!--android:scaleType="centerCrop"-->
+    <!--android:layout_height="wrap_content"/>-->
+
+
+    <!--</com.colud.jctl.ui.custom.MyToolbar>-->
+
+
+    <com.colud.jctl.ui.custom.VerticalScrollView
+        android:id="@+id/btmSlv"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:layout_height="0dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/home_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_244dp"
+                android:orientation="vertical"
+                android:background="@drawable/layout_grayline_white"
+                app:layout_collapseParallaxMultiplier="0.7">
+
+                <include layout="@layout/activity_header"> </include>
+
+                <include layout="@layout/item_home"> </include>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:background="@drawable/layout_grayline_white"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_height="@dimen/margin_244dp">
+
+                <android.support.design.widget.TabLayout
+
+                    android:id="@+id/home_tableLayout"
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/margin_180dp"
+                    android:layout_height="@dimen/margin_44dp"
+                    app:tabIndicatorColor="@color/color_3AB07D"
+                    app:tabIndicatorHeight="@dimen/margin_1"
+                    app:tabTextColor="@color/color_343434"
+                    app:tabSelectedTextColor="@color/color_3AB07D"
+                    app:tabMode="fixed"
+                    >
+
+                </android.support.design.widget.TabLayout>
+
+                <com.colud.jctl.ui.custom.NoScrollViewPager
+
+                    android:id="@+id/home_ViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.colud.jctl.ui.custom.NoScrollViewPager>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/more_ll"
+                android:layout_marginBottom="@dimen/margin_10dp"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@drawable/layout_grayline_gray"
+                android:layout_height="@dimen/margin_30dp">
+
+
+                <TextView
+                    android:id="@+id/morelltv"
+                    android:layout_width="wrap_content"
+                    android:text="@string/text_h_gd"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/color_3AB07D"
+                    android:textSize="@dimen/sp_font_14"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/morelliv"
+                    android:layout_width="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gd_home"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/margin_2dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.colud.jctl.ui.custom.VerticalScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<resources>
+
+    <style name="splashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/splash_img</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>//状态栏颜色设置为透明
+    </style>
+
+    <style name="NoTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>//状态栏颜色设置为透明
+    </style>
+
+    <style name="AllTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_3AB07D</item>
+        <item name="colorPrimaryDark">@color/color_3AB07D</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/include_toolbar_title"></include>
+
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_height="wrap_content">
+
+                <com.colud.jctl.ui.custom.TempCircleView
+                    android:layout_gravity="center"
+                    android:id="@+id/TempCircleView"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:layout_marginBottom="@dimen/margin_20dp"
+                    android:layout_width="@dimen/margin_124dp"
+                    android:layout_height="@dimen/margin_124dp"/>
+
+
+                <!--<com.colud.jctl.ui.custom.TempShowView-->
+                <!--android:layout_gravity="center"-->
+                <!--android:id="@+id/tempView"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_marginTop="@dimen/margin_20dp"-->
+                <!--android:layout_marginBottom="@dimen/margin_20dp"-->
+                <!--android:layout_width="@dimen/margin_150dp"-->
+                <!--android:layout_height="@dimen/margin_150dp"/>-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:background="@color/white"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_grayline_green"
+                    android:layout_marginLeft="@dimen/margin_30dp"
+                    android:layout_marginRight="@dimen/margin_30dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:padding="@dimen/margin_1"
+                    android:layout_marginBottom="@dimen/margin_10dp"
+                    android:layout_height="@dimen/margin_22.5dp">
+
+                    <Button
+                        android:id="@+id/day"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/sp_font_13"
+                        android:background="@color/color_3AB07D"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:layout_weight="1"
+                        android:text="@string/tv_day"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/month"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/sp_font_13"
+                        android:background="@null"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/tv_month"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/quarter"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/sp_font_13"
+                        android:background="@null"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/tv_quarter"
+                        android:visibility="gone"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card1"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/margin_30dp"
+                    android:layout_marginRight="@dimen/margin_30dp"
+                    android:layout_height="@dimen/margin_129.5dp"
+                    card_view:cardBackgroundColor="@color/color_54708F"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <!--<include layout="@layout/card_toolbar" android:id="@+id/chart_toolbar"/>-->
+
+                        <com.db.chart.view.LineChartView
+                            xmlns:chart="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/chart"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            />
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card2"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/margin_30dp"
+                    android:layout_marginRight="@dimen/margin_30dp"
+                    android:layout_height="@dimen/margin_129.5dp"
+                    card_view:cardBackgroundColor="@color/color_54708F"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <!--<include layout="@layout/card_toolbar" android:id="@+id/chart_toolbar"/>-->
+
+                        <com.db.chart.view.LineChartView
+                            xmlns:chart="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/chart1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            />
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <com.colud.jctl.ui.custom.ChartView
+                    android:id="@+id/gr_chartview"
+                    android:visibility="gone"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_129.5dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_height="match_parent">
+
+
+                <include layout="@layout/include_layout_growth_title"></include>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/gr_rv"
+                    android:layout_marginLeft="@dimen/margin_30dp"
+                    android:layout_marginRight="@dimen/margin_30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

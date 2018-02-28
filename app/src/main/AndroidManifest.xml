@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.jctl.colud">
+
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION">
+    </uses-permission>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION">
+    </uses-permission>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE">
+    </uses-permission>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE">
+    </uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE">
+    </uses-permission>
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE">
+    </uses-permission>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE">
+    </uses-permission>
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS">
+    </uses-permission>
+
+    <!-- 适配Android N系统必需的ContentProvider写权限声明，写权限包含应用包名 -->
+    <uses-permission android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.jctl.colud"/>
+
+    <!-- 二维码扫描权限 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <permission
+        android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.jctl.colud"
+        android:protectionLevel="normal">
+    </permission>
+
+    <!-- android:installLocation = "preferExternal" 改变安装位置 -->
+    <application
+        android:name="com.colud.jctl.JctlApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/jctl_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.colud.jctl.ui.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splashTheme"
+            android:launchMode="singleTask"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.colud.jctl.MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!--视频播放页-->
+
+        <activity
+            android:name="com.colud.jctl.ui.activity.PlayActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 登录 -->
+        <activity
+            android:name="com.colud.jctl.ui.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- 注册选择农户和农场主页面 -->
+        <activity
+            android:name="com.colud.jctl.ui.activity.RegFarmActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 注册资料卡页面 -->
+        <activity
+            android:name="com.colud.jctl.ui.activity.RegActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- 最后注册页面 -->
+        <activity
+            android:name="com.colud.jctl.ui.activity.MobileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!--天气页面-->
+        <activity
+            android:name="com.colud.jctl.ui.activity.WeatherAtivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.colud.jctl.ui.activity.MessageActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.colud.jctl.ui.activity.FindActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- 帮助中心 -->
+        <activity
+            android:name="com.colud.jctl.ui.activity.HelpCenterActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 我的收藏 -->
+        <activity
+            android:name="com.colud.jctl.ui.activity.CollectionnerActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 个人资料 -->
+        <activity
+            android:name="com.colud.jctl.ui.activity.PersonageActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 消息通知 -->
+        <activity
+            android:name="com.colud.jctl.ui.activity.MsgInformActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 新消息提醒 -->
+        <activity
+            android:name="com.colud.jctl.ui.activity.NewInfoActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 关于我们 -->
+        <activity
+            android:name="com.colud.jctl.ui.activity.AboutUsActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 意见反馈 -->
+        <activity
+            android:name="com.colud.jctl.ui.activity.FeedbackActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 修改密码 -->
+        <activity
+            android:name="com.colud.jctl.ui.activity.ChangePassActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- 农场管理 -->
+        <activity
+            android:name="com.colud.jctl.ui.activity.FarmManageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 添加农场 -->
+        <activity
+            android:name="com.colud.jctl.ui.activity.AddFarmActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- 农场详情修改更新 -->
+        <activity
+            android:name="com.colud.jctl.ui.activity.FarmDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- 地址地图页面 -->
+        <activity
+            android:name="com.colud.jctl.ui.activity.FarmAddressMapActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 作物页面 -->
+        <activity
+            android:name="com.colud.jctl.ui.activity.CropActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- 农田管理列表 -->
+        <activity
+            android:name="com.colud.jctl.ui.activity.FieldManageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 添加农田 -->
+        <activity
+            android:name="com.colud.jctl.ui.activity.AddFieldActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- 农田详情修改更新 -->
+        <activity
+            android:name="com.colud.jctl.ui.activity.FieldDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- 设备管理 -->
+        <activity
+            android:name="com.colud.jctl.ui.activity.RelayManageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <!-- 添加中继 -->
+        <activity
+            android:name="com.colud.jctl.ui.activity.AddRelayActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- 中继编辑修改删除 -->
+        <activity
+            android:name="com.colud.jctl.ui.activity.RelayDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- 设备节点管理 -->
+        <activity
+            android:name="com.colud.jctl.ui.activity.NodeManageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- <fragment android:name="com.colud.jctl.ui.fragment.NodeManageFragment" -->
+        <!-- android:windowSoftInputMode="adjustResize" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- /> -->
+
+        <activity
+            android:name="com.colud.jctl.ui.activity.NodeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.colud.jctl.ui.activity.GrowthRecordsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.colud.jctl.ui.activity.OffOnActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.colud.jctl.ui.activity.CycleUpdateActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.colud.jctl.ui.activity.RepetitionActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.colud.jctl.ui.activity.IntelControlActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.colud.jctl.ui.activity.PeriodActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.colud.jctl.ui.activity.CapaCityActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.colud.jctl.ui.activity.NodeDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.colud.jctl.ui.activity.MoreNewDynamicActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTheme"/>
+        <activity
+            android:name="com.colud.jctl.ui.activity.PeopleManageActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.colud.jctl.ui.activity.StewardActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.colud.jctl.ui.activity.FarmerActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.colud.jctl.ui.activity.NewInfoDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.colud.jctl.ui.activity.BazaarDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.colud.jctl.ui.activity.NewDatailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.colud.jctl.ui.activity.CycleControlActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.colud.jctl.ui.activity.SimpleCaptureActivity"
+            android:screenOrientation="portrait"/>
+
+
+        <activity
+            android:name="io.github.xudaojie.qrcodelib.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTheme"/>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="FfFGg381bNAHSEht6UIYB0qGNRwAlfYK"/> <!-- http://lbsyun.baidu.com/apiconsole/key -->
+
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+        </service>
+
+        <!-- 判断当前连接网络状态 -->
+        <receiver android:name="com.colud.jctl.receiver.network.NetworkChangeListener">
+        </receiver>
+        <receiver android:name="com.colud.jctl.receiver.network.NetworkConnectChangedReceiver">
+        </receiver>
+
+
+        <!--<receiver android:name="com.colud.jctl.receiver.NetworkConnectChangedReceiver">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>-->
+        <!--<action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>-->
+        <!--<action android:name="android.net.wifi.STATE_CHANGE"/>-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!-- 百度云推送 -->
+        <!-- push service start -->
+        <!-- 用于接收系统消息以保证PushService正常运行 -->
+
+        <receiver
+            android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW"/>
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK"/>
+                <!-- 以下四项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <!-- Push服务接收客户端发送的各种请求 -->
+        <receiver
+            android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD"/>
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="com.colud.jctl"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE"/>
+            </intent-filter>
+        </service>
+
+        <!-- 4.4版本新增的CommandService声明，提升小米和魅族手机上的实际推送到达率 -->
+        <service
+            android:name="com.baidu.android.pushservice.CommandService"
+            android:exported="true"/>
+
+        <!-- 适配Android N系统必需的ContentProvider声明，写权限包含应用包名 -->
+        <provider
+            android:name="com.baidu.android.pushservice.PushInfoProvider"
+            android:authorities="com.colud.jctl.bdpush"
+            android:exported="true"
+            android:protectionLevel="signature"
+            android:writePermission="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.jctl.colud"/>
+
+        <!-- 此处Receiver名字修改为当前包名路径 -->
+        <receiver android:name="com.colud.jctl.push.PushTestReceiver">
+            <intent-filter>
+
+                <!-- 接收push消息 -->
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE"/>
+                <!-- 接收bind、setTags等method的返回结果 -->
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE"/>
+                <!-- 接收通知点击事件，和通知自定义内容 -->
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK"/>
+            </intent-filter>
+        </receiver>
+        <!-- 在百度开发者中心查询应用的API Key -->
+        <meta-data
+            android:name="api_key"
+            android:value="gdPsyG6Sga0u714WRoMcWGs3"/>
+
+        <service android:name="com.colud.jctl.service.DownloadApkServiceNotification"> </service>
+
+    </application>
+
+</manifest>

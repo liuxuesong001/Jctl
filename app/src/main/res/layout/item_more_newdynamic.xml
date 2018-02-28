@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="horizontal"
+              android:paddingLeft="@dimen/margin_15dp"
+              android:paddingRight="@dimen/margin_15dp"
+              android:paddingTop="@dimen/margin_12dp"
+              android:paddingBottom="@dimen/margin_12dp"
+              android:layout_marginTop="@dimen/margin_10dp"
+              android:background="@drawable/layout_grayline_white"
+              android:layout_height="@dimen/margin_100dp">
+
+    <ImageView
+        android:layout_width="@dimen/margin_139dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/new_fragment_img"
+        android:layout_gravity="center"
+        android:src="@drawable/splash_img"
+        android:layout_height="@dimen/margin_77.5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_15dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/new_fragment_title"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="@string/text_h_new_a"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/sp_font_13"
+            android:textColor="@color/color_323232"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/new_fragment_date"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="@string/text_h_new_a_date"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/sp_font_11"
+            android:textColor="@color/color_A2A2A2"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/new_fragment_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:text="@string/text_h_new_a_content"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/sp_font_11"
+            android:textColor="@color/color_323232"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

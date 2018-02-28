@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:background="@drawable/layout_grayline_white"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/margin_40dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/farm_img_a"
+            android:layout_width="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@drawable/sxnt"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/farm_tv_a"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/sp_font_13"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_3dp"
+            android:text="@string/tv_field_name"
+            android:textColor="@color/color_343434"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/margin_1"
+        android:background="@color/grayline"
+        android:layout_height="match_parent">
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/farm_img_b"
+            android:layout_width="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@drawable/mj"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/farm_tv_b"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/sp_font_13"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_3dp"
+            android:text="@string/tv_farmdetail_area"
+            android:textColor="@color/color_343434"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/margin_1"
+        android:background="@color/grayline"
+        android:layout_height="match_parent">
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/farm_img_c"
+            android:layout_width="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@drawable/crop"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/farm_tv_c"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/sp_font_13"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_3dp"
+            android:text="@string/tv_farm_crop"
+            android:textColor="@color/color_343434"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/margin_1"
+        android:background="@color/grayline"
+        android:layout_height="match_parent">
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/farm_img_d"
+            android:layout_width="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@drawable/jdsl"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/farm_tv_d"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/sp_font_13"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_3dp"
+            android:text="@string/tv_node"
+            android:textColor="@color/color_343434"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

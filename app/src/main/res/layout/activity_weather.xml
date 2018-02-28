@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/include_toolbar_title"></include>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/web_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+
+
+</LinearLayout>
+    <!--<android.support.design.widget.CoordinatorLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:fitsSystemWindows="true"-->
+    <!--tools:context="com.colud.jctl.ui.activity.WeatherAtivity"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<com.colud.jctl.ui.custom.TitleBar-->
+    <!--style="@style/toolbarStyleGreen"-->
+    <!--android:id="@+id/title_toolbar">-->
+
+
+    <!--</com.colud.jctl.ui.custom.TitleBar>-->
+    <!--<android.support.design.widget.AppBarLayout-->
+    <!--android:id="@+id/weather_appbarlayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:fitsSystemWindows="true">-->
+
+    <!--<android.support.design.widget.CollapsingToolbarLayout-->
+    <!--android:id="@+id/weather_collapsing_toolbarlayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:collapsedTitleTextAppearance="@style/ToolBarTitleText"-->
+    <!--app:contentScrim="#46a8ba"-->
+    <!--app:expandedTitleMarginEnd="48dp"-->
+    <!--app:expandedTitleMarginStart="48dp"-->
+    <!--app:expandedTitleTextAppearance="@style/transparentText"-->
+    <!--app:layout_scrollFlags="scroll|exitUntilCollapsed"-->
+    <!--android:fitsSystemWindows="true">-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/weather_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@drawable/bg_day"-->
+    <!--android:orientation="vertical"-->
+    <!--android:paddingBottom="10dp"-->
+    <!--app:layout_collapseMode="pin"-->
+    <!--app:layout_collapseParallaxMultiplier="0.7">-->
+
+    <!--<include  layout="@layout/item_weather_layout_top" > </include>-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:id="@+id/weather_future_recyclerView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="100dp">-->
+    <!--</android.support.v7.widget.RecyclerView>-->
+    <!--<lecho.lib.hellocharts.view.LineChartView-->
+    <!--android:id="@+id/weather_chart"-->
+    <!--android:background="@color/white"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="150dp"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<android.support.v7.widget.Toolbar-->
+    <!--android:id="@+id/weather_toolbar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="?attr/actionBarSize"-->
+    <!--app:layout_collapseMode="pin"-->
+    <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+    <!--app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>-->
+
+    <!--</android.support.design.widget.CollapsingToolbarLayout>-->
+
+    <!--<android.support.design.widget.TabLayout-->
+    <!--android:id="@+id/toolbar_tab"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="?attr/actionBarSize"-->
+    <!--android:layout_gravity="bottom"-->
+    <!--android:background="@color/white"-->
+    <!--app:tabIndicatorHeight="0dp"-->
+    <!--app:tabMinWidth="80dp"-->
+    <!--app:tabMode="scrollable"-->
+    <!--app:tabTextAppearance="@style/IconTabLayout"-->
+    <!--app:tabTextColor="@color/white"-->
+    <!--&gt;-->
+
+
+    <!--</android.support.design.widget.TabLayout>-->
+    <!--</android.support.design.widget.AppBarLayout>-->
+    <!--&lt;!&ndash;<android.support.v7.widget.Toolbar&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/weather_toolbar"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginLeft="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="?attr/actionBarSize"&ndash;&gt;-->
+    <!--&lt;!&ndash;app:popupTheme="@style/ThemeOverlay.AppCompat.Light"&ndash;&gt;-->
+    <!--&lt;!&ndash;app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>&ndash;&gt;-->
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/float_action"-->
+    <!--android:layout_width="@dimen/margin_56dp"-->
+    <!--android:layout_height="@dimen/margin_56dp"-->
+    <!--android:layout_gravity="bottom|right"-->
+    <!--android:layout_margin="@dimen/margin_2dp"-->
+    <!--android:clickable="true"-->
+    <!--android:src="@drawable/refresh"-->
+    <!--app:rippleColor="@color/white"-->
+    <!--/>-->
+
+    <!--<android.support.v4.view.ViewPager-->
+    <!--android:id="@+id/view_pager"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+    <!--/>-->
+
+
+    <!--</android.support.design.widget.CoordinatorLayout>-->

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@drawable/shape_layout"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/margin_244.5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingRight="@dimen/margin_15dp"
+        android:layout_height="@dimen/margin_45dp">
+
+        <TextView
+            android:id="@+id/farmer_qx"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/tv_qxiao"
+            android:textSize="@dimen/sp_font_15"
+            android:textColor="@color/color_3AB07D"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/grayline"
+        android:layout_height="@dimen/margin_1">
+    </View>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_height="@dimen/margin_33dp"
+        android:background="@drawable/shape_layout_line"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="left|center"
+            android:hint="@string/mine_name"
+            android:textColorHint="@color/color_CECECE"
+            android:textSize="@dimen/sp_font_15"
+            android:textColor="@color/white"
+            android:paddingLeft="@dimen/margin_25dp"
+            android:id="@+id/steward_et_name"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_height="@dimen/margin_33dp"
+        android:background="@drawable/shape_layout_line"
+        >
+
+        <Spinner
+            android:id="@+id/farmer_sp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_20dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_height="@dimen/margin_33dp"
+        android:background="@drawable/shape_layout_line"
+        >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:hint="@string/mine_code"
+            android:textColorHint="@color/color_CECECE"
+            android:textSize="@dimen/sp_font_15"
+            android:paddingLeft="@dimen/margin_25dp"
+            android:id="@+id/steward_et_vercode"/>
+
+        <Button
+            android:id="@+id/farmer_send_btn"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_login_btn_zero"
+            android:textColor="@color/color_3AB07D"
+            android:textSize="@dimen/sp_font_15"
+            android:text="@string/tv_fyzmgncz"
+            />
+
+    </LinearLayout>
+
+    <!--登陆-->
+    <Button
+        android:id="@+id/farmer_btn"
+        android:layout_width="@dimen/margin_209dp"
+        android:layout_height="@dimen/margin_33dp"
+        android:layout_marginTop="@dimen/margin_18dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_layout_g"
+        android:text="@string/tv_tjia"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/margin_20dp"
+        android:textSize="@dimen/sp_font_15"/>
+
+
+</LinearLayout>

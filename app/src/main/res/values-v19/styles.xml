@@ -1,0 +1,26 @@
+<resources>
+
+
+    <style name="splashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/splash_img</item>
+        <item name="android:windowTranslucentStatus">true</item>//透明状态栏
+    </style>
+
+    <style name="NoSatusTheme" parent="NoTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>//透明状态栏
+    </style>
+
+    <style name="NoTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="AllTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_3AB07D</item>
+        <item name="colorPrimaryDark">@color/color_3AB07D</item>
+    </style>
+
+</resources>

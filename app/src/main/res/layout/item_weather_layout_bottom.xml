@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imga"
+        android:layout_toRightOf="@+id/texta"
+        android:layout_width="wrap_content"
+        android:src="@mipmap/jctl_launcher"
+        android:scaleType="centerCrop"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_below="@+id/imga"
+        android:layout_width="1dp"
+        android:layout_marginLeft="78dp"
+        android:background="@color/grayline"
+        android:layout_height="100dp">
+
+    </View>
+
+    <TextView
+        android:text="晴 9 °"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imga"
+        android:id="@+id/textView4"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imga"
+        android:layout_alignStart="@+id/textView4">
+
+        <ImageView
+            android:id="@+id/imgb"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/jctl_launcher"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="温度36°"
+            android:layout_toRightOf="@+id/imgb"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/texta"
+        android:text="上午11:45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+
+</RelativeLayout>

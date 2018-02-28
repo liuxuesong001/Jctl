@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.colud.jctl.ui.custom.TitleBar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mytoolbarStyleGreen"
+    android:id="@+id/title_toolbar">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/home_title_ll"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:layout_marginRight="@dimen/margin_8dp"
+            android:textSize="@dimen/sp_font_18"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/title_img"
+            android:layout_width="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/saoma_xhdpi"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_cotent"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/white"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:visibility="gone"
+        android:textSize="@dimen/sp_font_15"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:id="@+id/title_right_img"
+        android:layout_width="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/margin_15dp"
+        android:src="@drawable/saoma_xhdpi"
+        android:layout_height="wrap_content"/>
+
+
+</com.colud.jctl.ui.custom.TitleBar>

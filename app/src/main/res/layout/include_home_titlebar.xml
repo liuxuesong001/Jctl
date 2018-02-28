@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@color/color_3AB07D"
+                android:layout_height="@dimen/margin_55dp">
+
+    <ImageView
+        android:id="@+id/homt_titlebar_leftimg"
+        android:layout_width="wrap_content"
+        android:src="@drawable/xiaoxi_xhdpi"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:id="@+id/home_title_weather"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_home_temp"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_font_20"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/homt_titlebar_img"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/homt_titlebar_rightimg"
+        android:layout_width="wrap_content"
+        android:src="@drawable/saoma_xhdpi"
+        android:layout_marginRight="@dimen/margin_15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

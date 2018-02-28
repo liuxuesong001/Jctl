@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:fitsSystemWindows="true"
+              android:layout_height="match_parent">
+
+
+    <include layout="@layout/include_login_toolbar"></include>
+
+    <com.colud.jctl.ui.custom.BottomScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/mine_zlk"
+                android:textSize="@dimen/sp_font_20"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_78dp"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_68dp"
+                android:paddingLeft="@dimen/margin_10dp"
+                android:layout_width="@dimen/margin_268.5dp"
+                android:layout_height="@dimen/margin_39.5dp"
+                android:background="@drawable/shape_login_zero"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:textColor="@color/white"
+                    android:text="@string/mine_name"
+                    android:textSize="@dimen/sp_font_15"
+                    android:layout_marginLeft="@dimen/margin_14.5dp"
+                    android:layout_height="wrap_content"/>
+
+                <com.colud.jctl.utils.editview.EditTextWithDel
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="left|center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_font_15"
+                    android:hint=""
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:layout_marginLeft="@dimen/margin_2dp"
+                    android:id="@+id/reg_name"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_22dp"
+                android:layout_width="@dimen/margin_268.5dp"
+                android:layout_height="@dimen/margin_39.5dp"
+                android:paddingLeft="@dimen/margin_10dp"
+                android:background="@drawable/shape_login_zero"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_font_15"
+                    android:text="@string/mine_sex"
+                    android:layout_marginLeft="@dimen/margin_14.5dp"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/margin_2dp"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/nan_checkbox"
+                        android:layout_width="@dimen/margin_15dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="@dimen/margin_15dp"
+                        android:button="@null"
+                        android:checked="true"
+                        android:background="@drawable/checkbox_style_early"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:text="@string/mine_nan"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_font_15"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/margin_10dp"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/nv_checkbox"
+                        android:layout_width="@dimen/margin_15dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="@dimen/margin_15dp"
+                        android:button="@null"
+                        android:background="@drawable/checkbox_style_early"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:text="@string/mine_nv"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_font_15"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:weightSum="2"-->
+                <!--android:layout_marginLeft="@dimen/margin_2dp"-->
+                <!--android:layout_height="match_parent">-->
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/mine_layout_nan"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:gravity="right|center"-->
+                <!--android:layout_height="match_parent">-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/mine_nan_img"-->
+                <!--android:layout_width="@dimen/margin_15dp"-->
+                <!--android:src="@drawable/login_sex_y"-->
+                <!--android:layout_height="@dimen/margin_15dp"/>-->
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:text="@string/mine_nan"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_marginLeft="@dimen/margin_15dp"-->
+                <!--android:textSize="@dimen/sp_font_15"-->
+                <!--android:layout_height="wrap_content"/>-->
+
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                <!--android:id="@+id/mine_layout_nv"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_height="match_parent">-->
+                <!--<ImageView-->
+                <!--android:id="@+id/mine_nv_img"-->
+                <!--android:layout_width="@dimen/margin_15dp"-->
+                <!--android:src="@drawable/login_sex_n"-->
+                <!--android:layout_height="@dimen/margin_15dp"/>-->
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:text="@string/mine_nv"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_marginLeft="@dimen/margin_15dp"-->
+                <!--android:textSize="@dimen/sp_font_15"-->
+                <!--android:layout_height="wrap_content"/>-->
+
+                <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_22dp"
+                android:layout_width="@dimen/margin_268.5dp"
+                android:layout_height="@dimen/margin_39.5dp"
+                android:paddingLeft="@dimen/margin_10dp"
+                android:paddingRight="@dimen/margin_15dp"
+                android:background="@drawable/shape_login_zero"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_font_15"
+                    android:text="@string/mine_age"
+                    android:layout_marginLeft="@dimen/margin_14.5dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/mine_age"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_gravity="center"
+                    android:gravity="left|center"
+                    android:layout_marginRight="@dimen/margin_2dp"
+                    android:layout_marginLeft="@dimen/margin_2dp"
+                    android:textSize="@dimen/sp_font_15"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/mine_xta"
+                    android:layout_width="wrap_content"
+                    android:gravity="right|center"
+                    android:text="@string/mine_xt"
+                    android:layout_gravity="center"
+                    android:textColor="@color/color_A7A1A1"
+                    android:textSize="@dimen/sp_font_15"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_22dp"
+                android:layout_width="@dimen/margin_268.5dp"
+                android:layout_height="@dimen/margin_39.5dp"
+                android:paddingLeft="@dimen/margin_10dp"
+                android:paddingRight="@dimen/margin_15dp"
+                android:background="@drawable/shape_login_zero"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_font_15"
+                    android:text="@string/mine_address"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/margin_14.5dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/mine_address"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:gravity="left|center"
+                    android:layout_marginRight="@dimen/margin_2dp"
+                    android:layout_marginLeft="@dimen/margin_2dp"
+                    android:textSize="@dimen/sp_font_15"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/mine_xtb"
+                    android:layout_width="wrap_content"
+                    android:gravity="right|center"
+                    android:text="@string/mine_xt"
+                    android:layout_gravity="center"
+                    android:textColor="@color/color_A7A1A1"
+                    android:textSize="@dimen/sp_font_15"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reg_firm_ll"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_22dp"
+                android:layout_width="@dimen/margin_268.5dp"
+                android:layout_height="@dimen/margin_39.5dp"
+                android:paddingLeft="@dimen/margin_10dp"
+                android:background="@drawable/shape_login_zero"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:textColor="@color/white"
+                    android:text="@string/mine_gsmc"
+                    android:textSize="@dimen/sp_font_15"
+                    android:layout_marginLeft="@dimen/margin_4.5dp"
+                    android:layout_height="wrap_content"/>
+
+                <com.colud.jctl.utils.editview.EditTextWithDel
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:layout_gravity="center"
+                    android:gravity="left|center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_font_15"
+                    android:hint=""
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:id="@+id/firm_name"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.colud.jctl.ui.custom.BottomScrollView>
+
+
+</LinearLayout>

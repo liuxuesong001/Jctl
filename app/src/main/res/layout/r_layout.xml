@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:background="@drawable/layout_grayline_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ll_adapter_bj"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="@dimen/margin_80dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/color_F0F9FF"
+            android:layout_height="@dimen/margin_50dp">
+
+            <LinearLayout
+                android:id="@+id/r_ll_a"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:paddingRight="@dimen/margin_5dp"
+                android:background="@drawable/selector_include_farm"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_marginRight="@dimen/margin_5dp"
+                android:layout_height="20dp">
+
+                <com.colud.jctl.ui.custom.MyTextView
+                    android:id="@+id/a"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:focusable="true"
+                    android:marqueeRepeatLimit="-1"
+                    android:ellipsize="marquee"
+                    android:textSize="@dimen/sp_font_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="@dimen/margin_1dp"
+                android:background="@color/grayline"
+                android:layout_height="match_parent">
+
+            </View>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/grayline"
+            android:layout_height="@dimen/margin_1">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="@dimen/margin_80dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/color_FFF5F6"
+            android:layout_height="@dimen/margin_50dp">
+
+            <LinearLayout
+                android:id="@+id/r_ll_aa"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:paddingRight="@dimen/margin_5dp"
+                android:background="@drawable/selector_include_farm"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_marginRight="@dimen/margin_5dp"
+                android:layout_height="20dp">
+
+                <com.colud.jctl.ui.custom.MyTextView
+                    android:id="@+id/aa"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:focusable="true"
+                    android:marqueeRepeatLimit="-1"
+                    android:ellipsize="marquee"
+                    android:textSize="@dimen/sp_font_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="@dimen/margin_1dp"
+                android:background="@color/grayline"
+                android:layout_height="match_parent">
+
+            </View>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/grayline"
+            android:layout_height="@dimen/margin_1">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="@dimen/margin_80dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:descendantFocusability="beforeDescendants"
+            android:background="@color/color_EDFDFF"
+            android:layout_height="@dimen/margin_50dp">
+
+            <LinearLayout
+                android:id="@+id/r_ll_b"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:background="@drawable/selector_include_farm"
+                android:paddingRight="@dimen/margin_5dp"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_marginRight="@dimen/margin_5dp"
+                android:layout_height="20dp">
+
+                <com.colud.jctl.ui.custom.MyTextView
+                    android:id="@+id/b"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:focusable="true"
+                    android:marqueeRepeatLimit="-1"
+                    android:ellipsize="marquee"
+                    android:textSize="@dimen/sp_font_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="@dimen/margin_1dp"
+                android:background="@color/grayline"
+                android:layout_height="match_parent">
+
+            </View>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/grayline"
+            android:layout_height="@dimen/margin_1"/>
+
+
+        <LinearLayout
+            android:layout_width="@dimen/margin_80dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/color_FFF9F3"
+            android:layout_height="@dimen/margin_50dp">
+
+            <LinearLayout
+                android:id="@+id/r_ll_c"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:paddingRight="@dimen/margin_5dp"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_marginRight="@dimen/margin_5dp"
+                android:background="@drawable/selector_include_farm"
+                android:layout_height="20dp">
+
+                <com.colud.jctl.ui.custom.MyTextView
+                    android:id="@+id/c"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:focusable="true"
+                    android:marqueeRepeatLimit="-1"
+                    android:ellipsize="marquee"
+                    android:textSize="@dimen/sp_font_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="@dimen/margin_1dp"
+                android:background="@color/grayline"
+                android:layout_height="match_parent">
+
+            </View>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/grayline"
+            android:layout_height="@dimen/margin_1"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/margin_80dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/color_E3FFF6"
+            android:layout_height="@dimen/margin_50dp">
+
+            <LinearLayout
+                android:id="@+id/r_ll_d"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:paddingRight="@dimen/margin_5dp"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_marginRight="@dimen/margin_5dp"
+                android:background="@drawable/selector_include_farm"
+                android:layout_height="20dp">
+
+                <com.colud.jctl.ui.custom.MyTextView
+                    android:id="@+id/d"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:focusable="true"
+                    android:marqueeRepeatLimit="-1"
+                    android:ellipsize="marquee"
+                    android:textSize="@dimen/sp_font_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="@dimen/margin_1dp"
+                android:background="@color/grayline"
+                android:layout_height="match_parent">
+
+            </View>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/grayline"
+            android:layout_height="@dimen/margin_1"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/margin_80dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/color_FFF5F6"
+            android:layout_height="@dimen/margin_50dp">
+
+            <LinearLayout
+                android:id="@+id/r_ll_e"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:paddingRight="@dimen/margin_5dp"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_marginRight="@dimen/margin_5dp"
+                android:background="@drawable/selector_include_farm"
+                android:layout_height="20dp">
+
+                <com.colud.jctl.ui.custom.MyTextView
+                    android:id="@+id/e"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:focusable="true"
+                    android:marqueeRepeatLimit="-1"
+                    android:ellipsize="marquee"
+                    android:textSize="@dimen/sp_font_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="@dimen/margin_1dp"
+                android:background="@color/grayline"
+                android:layout_height="match_parent">
+
+            </View>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/grayline"
+            android:layout_height="@dimen/margin_1"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/margin_80dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/color_EDFDFF"
+            android:layout_height="@dimen/margin_50dp">
+
+            <LinearLayout
+                android:id="@+id/r_ll_f"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:paddingRight="@dimen/margin_5dp"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_marginRight="@dimen/margin_5dp"
+                android:background="@drawable/selector_include_farm"
+                android:layout_height="20dp">
+
+                <com.colud.jctl.ui.custom.MyTextView
+                    android:id="@+id/f"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:focusable="true"
+                    android:marqueeRepeatLimit="-1"
+                    android:ellipsize="marquee"
+                    android:textSize="@dimen/sp_font_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="@dimen/margin_1dp"
+                android:background="@color/grayline"
+                android:layout_height="match_parent">
+
+            </View>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/grayline"
+            android:layout_height="@dimen/margin_1"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/margin_80dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/color_FFF5F6"
+            android:layout_height="@dimen/margin_50dp">
+
+            <LinearLayout
+                android:id="@+id/r_ll_g"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:paddingRight="@dimen/margin_5dp"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_marginRight="@dimen/margin_5dp"
+                android:background="@drawable/selector_include_farm"
+                android:layout_height="20dp">
+
+                <com.colud.jctl.ui.custom.MyTextView
+                    android:id="@+id/g"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:focusable="true"
+                    android:marqueeRepeatLimit="-1"
+                    android:ellipsize="marquee"
+                    android:textSize="@dimen/sp_font_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="@dimen/margin_1dp"
+                android:background="@color/grayline"
+                android:layout_height="match_parent">
+
+            </View>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/grayline"
+            android:layout_height="@dimen/margin_1"/>
+
+
+        <LinearLayout
+            android:layout_width="@dimen/margin_80dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/color_EDFDFF"
+            android:layout_height="@dimen/margin_50dp">
+
+            <LinearLayout
+                android:id="@+id/r_ll_h"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:paddingRight="@dimen/margin_5dp"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_marginRight="@dimen/margin_5dp"
+                android:background="@drawable/selector_include_farm"
+                android:layout_height="20dp">
+
+                <com.colud.jctl.ui.custom.MyTextView
+                    android:id="@+id/h"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:focusable="true"
+                    android:marqueeRepeatLimit="-1"
+                    android:ellipsize="marquee"
+                    android:textSize="@dimen/sp_font_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="@dimen/margin_1dp"
+                android:background="@color/grayline"
+                android:layout_height="match_parent">
+
+            </View>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/grayline"
+            android:layout_height="@dimen/margin_1"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/margin_80dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/color_FFF5F6"
+            android:layout_height="@dimen/margin_50dp">
+
+            <LinearLayout
+                android:id="@+id/r_ll_y"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:paddingRight="@dimen/margin_5dp"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_marginRight="@dimen/margin_5dp"
+                android:background="@drawable/selector_include_farm"
+                android:layout_height="20dp">
+
+                <com.colud.jctl.ui.custom.MyTextView
+                    android:id="@+id/y"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:focusable="true"
+                    android:marqueeRepeatLimit="-1"
+                    android:ellipsize="marquee"
+                    android:textSize="@dimen/sp_font_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="@dimen/margin_1dp"
+                android:background="@color/grayline"
+                android:layout_height="match_parent">
+
+            </View>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/grayline"
+            android:layout_height="@dimen/margin_1"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/margin_80dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/color_EDFDFF"
+            android:layout_height="@dimen/margin_50dp">
+
+            <LinearLayout
+                android:id="@+id/r_ll_z"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:paddingRight="@dimen/margin_5dp"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_marginRight="@dimen/margin_5dp"
+                android:background="@drawable/selector_include_farm"
+                android:layout_height="20dp">
+
+                <com.colud.jctl.ui.custom.MyTextView
+                    android:id="@+id/z"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:focusable="true"
+                    android:marqueeRepeatLimit="-1"
+                    android:ellipsize="marquee"
+                    android:textSize="@dimen/sp_font_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="@dimen/margin_1dp"
+                android:background="@color/grayline"
+                android:layout_height="match_parent">
+
+            </View>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/grayline"
+            android:layout_height="@dimen/margin_1"/>
+
+
+        <LinearLayout
+            android:layout_width="@dimen/margin_80dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/color_FFF5F6"
+            android:layout_height="@dimen/margin_50dp">
+
+            <LinearLayout
+                android:id="@+id/r_ll_k"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:paddingRight="@dimen/margin_5dp"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_marginRight="@dimen/margin_5dp"
+                android:background="@drawable/selector_include_farm"
+                android:layout_height="20dp">
+
+                <com.colud.jctl.ui.custom.MyTextView
+                    android:id="@+id/k"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:focusable="true"
+                    android:marqueeRepeatLimit="-1"
+                    android:ellipsize="marquee"
+                    android:textSize="@dimen/sp_font_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="@dimen/margin_1dp"
+                android:background="@color/grayline"
+                android:layout_height="match_parent">
+
+            </View>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/grayline"
+            android:layout_height="@dimen/margin_1"/>
+
+
+        <LinearLayout
+            android:layout_width="@dimen/margin_80dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/color_EDFDFF"
+            android:layout_height="@dimen/margin_50dp">
+
+            <LinearLayout
+                android:id="@+id/r_ll_l"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:paddingRight="@dimen/margin_5dp"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_marginRight="@dimen/margin_5dp"
+                android:background="@drawable/selector_include_farm"
+                android:layout_height="20dp">
+
+                <com.colud.jctl.ui.custom.MyTextView
+                    android:id="@+id/l"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:focusable="true"
+                    android:marqueeRepeatLimit="-1"
+                    android:ellipsize="marquee"
+                    android:textSize="@dimen/sp_font_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="@dimen/margin_1dp"
+                android:background="@color/grayline"
+                android:layout_height="match_parent">
+
+            </View>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/grayline"
+            android:layout_height="@dimen/margin_1"/>
+
+
+        <LinearLayout
+            android:layout_width="@dimen/margin_80dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/color_FEFAEE"
+            android:layout_height="@dimen/margin_50dp">
+
+            <LinearLayout
+                android:id="@+id/r_ll_m"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:paddingRight="@dimen/margin_5dp"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_marginRight="@dimen/margin_5dp"
+                android:background="@drawable/selector_include_farm"
+                android:layout_height="20dp">
+
+                <com.colud.jctl.ui.custom.MyTextView
+                    android:id="@+id/m"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:focusable="true"
+                    android:marqueeRepeatLimit="-1"
+                    android:ellipsize="marquee"
+                    android:textSize="@dimen/sp_font_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="@dimen/margin_1dp"
+                android:background="@color/grayline"
+                android:layout_height="match_parent">
+
+            </View>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

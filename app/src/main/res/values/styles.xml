@@ -1,0 +1,263 @@
+<resources>
+
+    <style name="progress_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <!-- 基础-->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/color_3AB07D</item>
+        <item name="colorAccent">@color/color_3AB07D</item>
+    </style>
+    <!--BaseAppTheme-->
+    <style name="BaseAppTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/color_3AB07D</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--透明状态栏-->
+    <style name="NoTheme" parent="AppTheme">
+
+    </style>
+
+    <!--No 没有状态栏-->
+    <style name="NoSatusTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--欢迎页-->
+    <style name="splashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_img</item>
+        //这里的图片设置为splashActivity全屏显示的第一张图片
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--欢迎页第一次-->
+    <style name="welTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@drawable/guide_img1</item>
+    </style>
+
+    <!--TabLayout 样式-->
+    <style name="TabLayoutStyle" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/colorPrimary</item>
+        <item name="tabSelectedTextColor">@color/colorPrimary</item>
+        <item name="tabTextAppearance">@style/TabTextAppearence</item>
+        <item name="tabPaddingEnd">0dp</item>
+    </style>
+
+    <style name="TabTextAppearence" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">16sp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!--TabLayout样式-->
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabMaxWidth">@dimen/margin_90dp</item>
+        <item name="tabIndicatorColor">?attr/colorAccent</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+        <item name="tabSelectedTextColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/sp_font_12</item>
+        <!--<item name="android:textColor">?android:textColorSecondary</item>-->
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    <style name="MainTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/color_3AB07D</item>
+        <item name="colorAccent">@color/color_3AB07D</item>
+    </style>
+
+
+    <!--TextView-->
+
+    <style name="NormalTextView">
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:textSize">@dimen/textSize_normal</item>
+    </style>
+
+    <style name="NormalGreyTextView">
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">@dimen/textSize_normal</item>
+    </style>
+
+    <style name="SmallTextView">
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:textSize">@dimen/textSize_small</item>
+    </style>
+
+    <style name="SmallGreyTextView">
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">@dimen/textSize_small</item>
+    </style>
+
+    <style name="ToolBarTitleText" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="transparentText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">#00000000</item>
+    </style>
+
+    <style name="IconTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/IconTextAppearance</item>
+    </style>
+
+    <style name="IconTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+
+    <style name="ToolbarStyle" parent="Base.Widget.AppCompat.ActionBar">
+        <item name="android:minHeight">@dimen/margin_48dp</item>
+        <item name="titleMargin">0dp</item>
+    </style>
+
+    <!--Menu按压效果-->
+    <style name="ToolBarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:actionBarItemBackground">@drawable/selector_btn_bg</item>
+    </style>
+
+    <style name="AllTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_3AB07D</item>
+        <item name="colorPrimaryDark">@color/color_3AB07D</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/sp_font_18</item>
+    </style>
+
+    <!--登录login-->
+
+    <!-- toolbar标题样式 -->
+    <style name="ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- toolbar菜单文字尺寸 -->
+    <style name="ToolbarMenuTextSize" parent="@style/TextAppearance.AppCompat.Menu">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+
+    <!-- toolbar菜单文字颜色 -->
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionMenuTextColor">@android:color/white</item>       <!-- 菜单文字颜色 -->
+        <item name="actionMenuTextAppearance">@style/ToolbarMenuTextSize</item>
+    </style>
+
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>  <!--把该属性改为false即可使menu位置位于toolbar之下-->
+    </style>
+
+    <!-- toolbar弹出菜单样式 -->
+    <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat">
+        <item name="android:colorBackground">#212121</item>             <!-- 弹窗菜单背景颜色 -->
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+    </style>
+
+    <style name="toolbarStyle" parent="Base.Widget.AppCompat.Toolbar">
+        <!--<item name="android:background">@color/colorPrimary</item>-->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:fitsSystemWindows">true</item>-->
+        <item name="theme">@style/ToolbarTheme</item>
+        <item name="popupTheme">@style/ToolbarPopupTheme</item>
+        <item name="titleTextAppearance">@style/ToolbarTitle</item>
+        <item name="android:minHeight">20dp</item>
+        <item name="maxButtonHeight">20dp</item>
+    </style>
+
+    <style name="toolbarStyleGreen" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/color_3AB07D</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:fitsSystemWindows">true</item>-->
+        <item name="theme">@style/ToolbarTheme</item>
+        <item name="popupTheme">@style/ToolbarPopupTheme</item>
+        <item name="titleTextAppearance">@style/ToolbarTitle</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="maxButtonHeight">48dp</item>
+    </style>
+
+    <style name="toolbarStyleBlack" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/black</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:fitsSystemWindows">true</item>-->
+        <item name="theme">@style/ToolbarTheme</item>
+        <item name="popupTheme">@style/ToolbarPopupTheme</item>
+        <item name="titleTextAppearance">@style/ToolbarTitle</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="maxButtonHeight">48dp</item>
+    </style>
+
+    <style name="mytoolbarStyleGreen" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/color_3AB07D</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:fitsSystemWindows">true</item>-->
+        <item name="theme">@style/ToolbarTheme</item>
+        <item name="popupTheme">@style/ToolbarPopupTheme</item>
+        <item name="titleTextAppearance">@style/ToolbarTitle</item>
+        <item name="android:minHeight">70dp</item>
+        <item name="maxButtonHeight">48dp</item>
+    </style>
+
+    <style name="mytoolbarStyle" parent="Base.Widget.AppCompat.Toolbar">
+        <!--<item name="android:background">@color/colorPrimary</item>-->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:fitsSystemWindows">true</item>-->
+        <item name="theme">@style/ToolbarTheme</item>
+        <item name="popupTheme">@style/ToolbarPopupTheme</item>
+        <item name="titleTextAppearance">@style/ToolbarTitle</item>
+        <item name="android:minHeight">70dp</item>
+        <item name="maxButtonHeight">20dp</item>
+    </style>
+
+</resources>

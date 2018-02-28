@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.colud.jctl.ui.custom.SoftInputRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.colud.jctl.ui.custom.TitleBar
+        style="@style/toolbarStyleGreen"
+        android:id="@+id/title_toolbar">
+
+        <TextView
+            android:id="@+id/title_cotent"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/white"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:visibility="gone"
+            android:textSize="@dimen/sp_font_15"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/title_right_img"
+            android:layout_width="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:src="@drawable/add_right"
+            android:layout_height="wrap_content"/>
+
+    </com.colud.jctl.ui.custom.TitleBar>
+
+    <com.colud.jctl.ui.custom.BottomScrollView
+        android:layout_below="@+id/title_toolbar"
+        android:layout_above="@+id/btm_delete"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:paddingLeft="@dimen/margin_15dp"
+                android:paddingRight="@dimen/margin_15dp"
+                android:background="@drawable/layout_grayline_white"
+                android:layout_height="@dimen/margin_50dp">
+
+                <TextView
+                    android:layout_width="@dimen/margin_102.5dp"
+                    android:textSize="@dimen/sp_font_15"
+                    android:layout_gravity="center"
+                    android:text="@string/tv_zjmc"
+                    android:textColor="@color/color_343434"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_relay_a"
+                    android:layout_width="match_parent"
+                    android:textSize="@dimen/sp_font_15"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:layout_gravity="center"
+                    android:textColor="@color/color_343434"
+                    android:layout_height="wrap_content"/>
+
+                <!--<EditText-->
+                <!--android:id="@+id/addrelay_detail_num"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:textSize="@dimen/sp_font_13"-->
+                <!--android:visibility="gone"-->
+                <!--android:background="@null"-->
+                <!--android:textColor="@color/color_343434"-->
+                <!--android:hint="@string/hint_addrelay_zjbh"-->
+                <!--android:textColorHint="@color/color_CECECE"-->
+                <!--android:layout_height="match_parent"/>-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/addrelay_ll"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/margin_15dp"
+                android:paddingRight="@dimen/margin_15dp"
+                android:layout_height="@dimen/margin_50dp">
+
+                <TextView
+                    android:layout_width="@dimen/margin_102.5dp"
+                    android:textSize="@dimen/sp_font_15"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_ssnc"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textColor="@color/color_343434"/>
+
+                <TextView
+                    android:id="@+id/addrelay_sdnt_tv"
+                    android:layout_width="wrap_content"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/sp_font_13"
+                    android:textColor="@color/color_343434"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/relay_detaul_imga"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/right_in"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/grayline"
+                android:layout_height="@dimen/margin_1">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/margin_15dp"
+                android:paddingRight="@dimen/margin_15dp"
+                android:layout_height="@dimen/margin_50dp">
+
+                <TextView
+                    android:layout_width="@dimen/margin_102.5dp"
+                    android:textSize="@dimen/sp_font_15"
+                    android:layout_gravity="center"
+                    android:text="@string/tv_dl"
+                    android:textColor="@color/color_343434"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/addrelay_detail_dl"
+                    android:layout_width="match_parent"
+                    android:textSize="@dimen/sp_font_13"
+                    android:layout_gravity="center"
+                    android:gravity="left|center"
+                    android:textColor="@color/color_343434"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/grayline"
+                android:layout_height="@dimen/margin_1">
+
+            </View>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/margin_15dp"
+                android:paddingRight="@dimen/margin_15dp"
+                android:layout_height="@dimen/margin_50dp">
+
+                <TextView
+                    android:layout_width="@dimen/margin_102.5dp"
+                    android:textSize="@dimen/sp_font_15"
+                    android:layout_gravity="center"
+                    android:text="@string/tv_syr"
+                    android:textColor="@color/color_343434"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_relay_b"
+                    android:layout_width="match_parent"
+                    android:textSize="@dimen/sp_font_15"
+                    android:layout_gravity="center"
+                    android:textColor="@color/color_343434"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/addrelay_detail_ren"
+                    android:layout_width="match_parent"
+                    android:textSize="@dimen/sp_font_13"
+                    android:visibility="gone"
+                    android:textColor="@color/color_343434"
+                    android:hint="@string/hint_addrelay_ssr"
+                    android:background="@null"
+                    android:textColorHint="@color/color_CECECE"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/grayline"
+                android:layout_height="@dimen/margin_1">
+
+            </View>
+
+            <LinearLayout
+                android:id="@+id/addrelay_time_ll"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/margin_15dp"
+                android:paddingRight="@dimen/margin_15dp"
+                android:layout_height="@dimen/margin_50dp">
+
+                <TextView
+                    android:layout_width="@dimen/margin_102.5dp"
+                    android:textSize="@dimen/sp_font_15"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_zjbdsj"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textColor="@color/color_343434"/>
+
+
+                <TextView
+                    android:id="@+id/addrelay_time_tv"
+                    android:layout_width="wrap_content"
+                    android:gravity="left|center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/sp_font_13"
+                    android:textColor="@color/color_343434"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/relay_detaul_imgb"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/right_in"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/margin_15dp"
+                android:paddingRight="@dimen/margin_15dp"
+                android:visibility="gone"
+                android:layout_height="@dimen/margin_50dp">
+
+                <TextView
+                    android:layout_width="@dimen/margin_102.5dp"
+                    android:textSize="@dimen/sp_font_15"
+                    android:layout_gravity="center"
+                    android:text="@string/tv_gzjdsl"
+                    android:textColor="@color/color_343434"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_relay_c"
+                    android:layout_width="match_parent"
+                    android:textSize="@dimen/sp_font_15"
+                    android:layout_gravity="center"
+                    android:textColor="@color/color_343434"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/addrelay_detail_nodenum"
+                    android:layout_width="match_parent"
+                    android:textSize="@dimen/sp_font_13"
+                    android:textColor="@color/color_343434"
+                    android:hint="@string/hint_fiedl_jdsl"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:visibility="gone"
+                    android:textColorHint="@color/color_CECECE"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/grayline"
+                android:layout_height="@dimen/margin_1">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_15dp"
+                android:paddingRight="@dimen/margin_15dp"
+                android:layout_height="@dimen/margin_50dp">
+
+                <TextView
+                    android:layout_width="@dimen/margin_102.5dp"
+                    android:textSize="@dimen/sp_font_15"
+                    android:layout_gravity="center"
+                    android:text="@string/tv_jd"
+                    android:textColor="@color/color_343434"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_relay_d"
+                    android:layout_width="match_parent"
+                    android:textSize="@dimen/sp_font_15"
+                    android:layout_gravity="center"
+                    android:textColor="@color/color_343434"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/addrelay_detail_jd"
+                    android:layout_width="match_parent"
+                    android:textSize="@dimen/sp_font_13"
+                    android:textColor="@color/color_343434"
+                    android:hint="@string/hint_addrelay_jd"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:textColorHint="@color/color_CECECE"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/grayline"
+                android:layout_height="@dimen/margin_1">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_15dp"
+                android:paddingRight="@dimen/margin_15dp"
+                android:layout_height="@dimen/margin_50dp">
+
+                <TextView
+                    android:layout_width="@dimen/margin_102.5dp"
+                    android:textSize="@dimen/sp_font_15"
+                    android:layout_gravity="center"
+                    android:text="@string/tv_wdu"
+                    android:textColor="@color/color_343434"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_relay_e"
+                    android:layout_width="match_parent"
+                    android:textSize="@dimen/sp_font_15"
+                    android:layout_gravity="center"
+                    android:textColor="@color/color_343434"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/addrelay_detail_wd"
+                    android:layout_width="match_parent"
+                    android:textSize="@dimen/sp_font_13"
+                    android:visibility="gone"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/color_343434"
+                    android:hint="@string/hint_addrelay_wd"
+                    android:background="@null"
+                    android:layout_weight="1"
+                    android:textColorHint="@color/color_CECECE"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/grayline"
+                android:layout_height="@dimen/margin_1">
+
+            </View>
+
+            <LinearLayout
+                android:id="@+id/addrelay_address_rl"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/margin_15dp"
+                android:paddingRight="@dimen/margin_15dp"
+                android:layout_height="@dimen/margin_50dp">
+
+                <TextView
+                    android:layout_width="@dimen/margin_102.5dp"
+                    android:textSize="@dimen/sp_font_15"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_dlwz"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textColor="@color/color_343434"/>
+
+                <TextView
+                    android:id="@+id/addrelay_address_tv"
+                    android:layout_width="wrap_content"
+                    android:gravity="left"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/sp_font_13"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/color_343434"
+                    android:layout_height="wrap_content"/>
+
+
+                <EditText
+                    android:id="@+id/relay_et_address"
+                    android:layout_width="match_parent"
+                    android:textSize="@dimen/sp_font_13"
+                    android:textColor="@color/color_343434"
+                    android:hint="@string/hint_fiedl_addr"
+                    android:background="@null"
+                    android:visibility="gone"
+                    android:maxLines="1"
+                    android:layout_gravity="center"
+                    android:gravity="left|center"
+                    android:singleLine="true"
+                    android:layout_weight="1"
+                    android:textColorHint="@color/color_CECECE"
+                    android:layout_height="match_parent"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/addrelay_bushe_rl"
+                android:layout_width="match_parent"
+                android:background="@drawable/layout_grayline_white"
+                android:paddingLeft="@dimen/margin_15dp"
+                android:paddingRight="@dimen/margin_15dp"
+                android:layout_height="@dimen/margin_50dp">
+
+                <TextView
+                    android:layout_width="@dimen/margin_102.5dp"
+                    android:textSize="@dimen/sp_font_15"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_bssj"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textColor="@color/color_343434"/>
+
+
+                <TextView
+                    android:id="@+id/addrelay_bushe_tv"
+                    android:layout_width="wrap_content"
+                    android:gravity="left|center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/sp_font_13"
+                    android:textColor="@color/color_343434"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.colud.jctl.ui.custom.BottomScrollView>
+
+    <LinearLayout
+        android:id="@+id/btm_delete"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/layout_grayline_gray"
+        android:layout_height="@dimen/margin_50dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_delete"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/early_delete"
+            android:textSize="@dimen/sp_font_13"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:textColor="@color/color_A6A6A6"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</com.colud.jctl.ui.custom.SoftInputRelativeLayout>

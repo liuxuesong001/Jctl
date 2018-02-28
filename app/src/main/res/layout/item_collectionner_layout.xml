@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/margin_15dp"
+        android:paddingLeft="@dimen/margin_15dp"
+        android:layout_height="@dimen/margin_50dp">
+
+        <ImageView
+            android:id="@+id/collect_item_icon"
+            android:layout_width="@dimen/margin_30dp"
+            android:src="@drawable/mine_icon"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/margin_30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/collect_item_title"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:text="温室环境监测系统让土地生 “金”"
+                android:textSize="@dimen/sp_font_13"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/collect_item_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:text="现在一年四季我们都可以在市场上买到新鲜大蒜阿斯顿阿斯顿阿斯阿斯顿阿斯顿"
+                android:textSize="@dimen/sp_font_12"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/collect_item_date"
+            android:layout_width="wrap_content"
+            android:text="3-14"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:textSize="@dimen/sp_font_12"
+            android:textColor="@color/gray"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/color_CECECE"
+        android:layout_height="@dimen/margin_1">
+    </View>
+
+</LinearLayout>

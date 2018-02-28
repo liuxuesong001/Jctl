@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="@drawable/layout_grayline_white"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/margin_15dp"
+                android:paddingRight="@dimen/margin_15dp"
+                android:layout_height="@dimen/margin_50dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rep_rl"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/rep_xingqi"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/sp_font_15"
+            android:textColor="@color/color_343434"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:id="@+id/rep_img"
+            android:layout_width="@dimen/margin_30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/yes"
+            android:visibility="gone"
+            android:layout_height="@dimen/margin_30dp"/>
+
+        <CheckBox
+            android:id="@+id/rep_checkbox"
+            android:layout_width="@dimen/margin_20dp"
+            android:button="@null"
+            android:duplicateParentState="true"
+            android:layout_height="@dimen/margin_20dp"
+            android:clickable="false"
+            android:enabled="false"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/checkbox_style_rep"
+            android:layout_marginRight="@dimen/margin_15dp"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

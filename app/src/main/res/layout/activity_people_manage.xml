@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/include_toolbar_title"></include>
+
+    <LinearLayout
+        android:id="@+id/peo_gj_ll"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:paddingLeft="@dimen/margin_15dp"
+        android:paddingRight="@dimen/margin_15dp"
+        android:background="@drawable/layout_grayline_white"
+        android:layout_height="@dimen/margin_50dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/peo_gj"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:gravity="left|center"
+            android:textColor="@color/color_343434"
+            android:layout_weight="1"
+            android:text="@string/tv_gj"
+            android:textSize="@dimen/sp_font_15"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@drawable/right_in"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/peo_nh_ll"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:paddingLeft="@dimen/margin_15dp"
+        android:paddingRight="@dimen/margin_15dp"
+        android:background="@drawable/layout_grayline_white"
+        android:layout_height="@dimen/margin_50dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/peo_nh"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:gravity="left|center"
+            android:textColor="@color/color_343434"
+            android:layout_weight="1"
+            android:text="@string/tv_nh"
+            android:textSize="@dimen/sp_font_15"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@drawable/right_in"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

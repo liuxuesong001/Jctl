@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/btm_delete"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:visibility="gone"
+              android:background="@drawable/layout_grayline_gray"
+              android:layout_height="@dimen/margin_50dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_delete"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="@string/early_delete"
+        android:textSize="@dimen/sp_font_13"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:textColor="@color/color_A6A6A6"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

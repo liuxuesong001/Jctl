@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 没有焦点时的背景图片 -->
+    <item android:drawable="@drawable/selector_home_normal" android:state_enabled="true" android:state_window_focused="false"/>
+    <!-- 触摸模式按下时的背景图片 -->
+    <item android:drawable="@drawable/selector_home_pressed" android:state_pressed="true"/>
+    <item android:drawable="@drawable/selector_home_pressed" android:state_enabled="true" android:state_focused="true"/>
+    <item android:drawable="@drawable/selector_home_normal" android:state_enabled="true"/>
+    <!-- 获得焦点时的图片背景 -->
+    <item android:drawable="@drawable/selector_home_pressed" android:state_focused="true"/>
+
+    <!--
+    android:state_selected是选中
+    android:state_focused是获得焦点
+    android:state_pressed是点击
+    android:state_enabled是设置是否响应事件,指所有事件
+    -->
+</selector>

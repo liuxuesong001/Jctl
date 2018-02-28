@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="horizontal"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_height="@dimen/margin_78dp">
+
+
+    <LinearLayout
+        android:id="@+id/home_layout_ncgl"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/farm_home"
+            />
+
+        <TextView
+            android:layout_gravity="center"
+            android:text="@string/text_ncgl"
+            android:layout_marginTop="@dimen/margin_2dp"
+            android:textColor="@color/color_343434"
+            android:textSize="@dimen/sp_font_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_layout_sbgl"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/shebei_home"
+            />
+
+        <TextView
+            android:text="@string/text_sbgl"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_2dp"
+            android:textColor="@color/color_343434"
+            android:textSize="@dimen/sp_font_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_layout_rygl"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/renyuan_home"
+            />
+
+        <TextView
+            android:layout_gravity="center"
+            android:text="@string/text_rygl"
+            android:layout_marginTop="@dimen/margin_2dp"
+            android:textColor="@color/color_343434"
+            android:textSize="@dimen/sp_font_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_layout_spjk"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/shipin_home"
+            />
+
+        <TextView
+            android:layout_gravity="center"
+            android:text="@string/text_spjk"
+            android:layout_marginTop="@dimen/margin_2dp"
+            android:textColor="@color/color_343434"
+            android:textSize="@dimen/sp_font_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>

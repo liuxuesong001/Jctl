@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical"
+              android:layout_height="match_parent">
+
+
+    <com.colud.jctl.ui.custom.TitleBar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/toolbarStyle"
+        android:id="@+id/mine_toolbar">
+
+    </com.colud.jctl.ui.custom.TitleBar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/mine_zhmm"
+                android:textSize="@dimen/sp_font_20"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin_78dp"
+                android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_67dp"
+                android:layout_width="@dimen/margin_268.5dp"
+                android:layout_height="@dimen/margin_39.5dp"
+                android:background="@drawable/shape_login_zero"
+                >
+
+                <com.colud.jctl.utils.editview.EditTextWithDel
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="left|center"
+                    android:hint="@string/mine_mobile"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:singleLine="true"
+                    android:maxLength="11"
+                    android:textColorHint="@color/color_CECECE"
+                    android:textSize="@dimen/sp_font_15"
+                    android:textColor="@color/white"
+                    android:paddingLeft="@dimen/margin_25dp"
+                    android:id="@+id/find_tel"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/margin_268.5dp"
+                android:layout_height="@dimen/margin_39.5dp"
+                android:layout_marginTop="@dimen/margin_25dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_login_zero"
+                >
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="left|center"
+                    android:textColor="@color/white"
+                    android:hint="@string/mine_code"
+                    android:textColorHint="@color/color_CECECE"
+                    android:textSize="@dimen/sp_font_15"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:maxLength="4"
+                    android:paddingLeft="@dimen/margin_25dp"
+                    android:id="@+id/find_vercode"/>
+
+                <Button
+                    android:id="@+id/find_btnSendCode"
+                    android:layout_width="@dimen/margin_109dp"
+                    android:layout_height="@dimen/margin_24dp"
+                    android:background="@drawable/shape_login_btn_zero"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_font_12"
+                    android:text="@string/mine_sendcode"
+                    android:layout_marginRight="@dimen/margin_12dp"
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_25dp"
+                android:layout_width="@dimen/margin_268.5dp"
+                android:layout_height="@dimen/margin_39.5dp"
+                android:background="@drawable/shape_login_zero"
+                >
+
+                <com.colud.jctl.utils.editview.EditTextWithDel
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="left|center"
+                    android:hint="@string/mine_setpass"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/color_CECECE"
+                    android:textSize="@dimen/sp_font_15"
+                    android:textColor="@color/white"
+                    android:paddingLeft="@dimen/margin_25dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:id="@+id/find_pass"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/find_btn"
+                android:layout_width="@dimen/margin_268.5dp"
+                android:layout_height="@dimen/margin_39.5dp"
+                android:layout_marginTop="@dimen/margin_25dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_login_btn"
+                android:text="@string/mine_tj"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_font_15"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

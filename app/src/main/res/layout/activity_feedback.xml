@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.colud.jctl.ui.custom.TitleBar
+        style="@style/toolbarStyleGreen"
+        android:id="@+id/login_toolbar">
+
+        <TextView
+            android:id="@+id/title_cotent"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:textColor="@color/white"
+            android:layout_gravity="end|top"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:textSize="@dimen/sp_font_15"
+            android:layout_height="wrap_content"/>
+
+
+    </com.colud.jctl.ui.custom.TitleBar>
+
+    <EditText
+        android:id="@+id/feed_et"
+        android:padding="@dimen/margin_10dp"
+        android:layout_margin="@dimen/margin_10dp"
+        android:layout_width="match_parent"
+        android:background="@color/color_ECECEC"
+        android:textColor="@color/color_B1B0B0"
+        android:textColorHint="@color/color_B1B0B0"
+        android:textSize="@dimen/sp_font_11"
+        android:hint="@string/feed_hint"
+        android:gravity="top|left"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/margin_171dp"/>
+
+</LinearLayout>

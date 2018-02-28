@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_height="match_parent">
+
+    <!--<View-->
+    <!--android:id="@+id/status_bar"-->
+    <!--android:background="@color/color_3AB07D"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/margin_15dp"/>-->
+
+    <!--<include layout="@layout/include_titlebar"> </include>-->
+
+    <include layout="@layout/include_toolbar_viewpager"></include>
+
+    <ListView
+        android:id="@+id/more_listview"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+    </ListView>
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:text="@string/tv_please"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        android:background="@drawable/layout_grayline_white"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:textColor="@color/color_343434"
+        android:layout_height="@dimen/margin_50dp"/>
+
+</LinearLayout>

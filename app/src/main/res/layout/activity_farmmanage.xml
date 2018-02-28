@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/include_toolbar_title"></include>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/margin_10dp"
+        android:paddingBottom="@dimen/margin_10dp"
+        android:paddingLeft="@dimen/margin_15dp"
+        android:paddingRight="@dimen/margin_15dp"
+        android:focusableInTouchMode="true"
+        android:id="@+id/search_ll"
+        android:layout_height="wrap_content">
+
+        <!--android:focusable="true"-->
+        <!--android:focusableInTouchMode="true"-->
+
+        <!--<android.support.v7.widget.SearchView-->
+        <!--android:id="@+id/farm_sv"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:iconifiedByDefault="false"-->
+        <!--android:queryHint="@string/tv_farm_search"-->
+        <!--android:imeOptions="actionSearch"-->
+        <!--android:background="@drawable/shape_ecece"-->
+        <!--android:layout_height="@dimen/margin_50dp">-->
+        <!--</android.support.v7.widget.SearchView>-->
+
+        <com.colud.jctl.ui.custom.CleanEditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_44dp"
+            android:textSize="@dimen/sp_font_13"
+            android:inputType="text"
+            android:textColorHint="@color/color_CECECE"
+            android:background="@drawable/shape_ecece"
+            android:hint="@string/tv_farm_search"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/include_farmlabel_layout"></include>
+
+    <include layout="@layout/include_farm_rv"></include>
+
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_marginTop="@dimen/margin_10dp"
+              android:layout_width="match_parent"
+              android:background="@color/color_E2F3FF"
+              android:layout_height="@dimen/margin_30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/tv_cp"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_font_13"
+            android:textColor="@color/color_343434"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="@dimen/margin_1"
+        android:background="@color/skyblue"
+        android:layout_height="match_parent">
+    </View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/tv_jg"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_font_13"
+            android:textColor="@color/color_343434"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="@dimen/margin_1"
+        android:background="@color/skyblue"
+        android:layout_height="match_parent">
+    </View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/tv_scmc"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_font_13"
+            android:textColor="@color/color_343434"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="@dimen/margin_1"
+        android:background="@color/skyblue"
+        android:layout_height="match_parent">
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/tv_rq"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_font_13"
+            android:textColor="@color/color_343434"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

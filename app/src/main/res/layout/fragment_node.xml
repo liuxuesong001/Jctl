@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+    >
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+    <!--android:id="@+id/srf"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:id="@+id/left_rv"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:id="@+id/right_rv"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+
+    <LinearLayout
+        android:background="@drawable/layout_grayline_white"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50dp">
+
+        <TextView
+            android:layout_width="@dimen/margin_120dp"
+            android:id="@+id/v_item_id"
+            android:text="Node"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="@dimen/sp_font_15"
+            android:textColor="@color/blueheavey"
+            android:layout_height="wrap_content"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/title_rv"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <com.colud.jctl.ui.custom.bothway.CustomRecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/customRv"
+        android:visibility="gone"
+        android:background="@drawable/layout_grayline_white"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

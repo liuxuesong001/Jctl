@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_height="match_parent">
+
+    <com.colud.jctl.ui.custom.TitleBar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/toolbarStyleGreen"
+        android:id="@+id/login_toolbar">
+
+        <TextView
+            android:id="@+id/title_cotent"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:textColor="@color/white"
+            android:layout_gravity="end|top"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:textSize="@dimen/sp_font_15"
+            android:layout_height="wrap_content"/>
+
+
+    </com.colud.jctl.ui.custom.TitleBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/sp_font_15"
+        android:paddingRight="@dimen/margin_15dp"
+        android:background="@drawable/shadow_bj"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:text="1.怎样管理管家?"
+            android:textSize="@dimen/sp_font_15"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/grayline"
+            android:layout_margin="@dimen/margin_1"
+            android:layout_height="@dimen/margin_1">
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:text="2.怎样管理农户?"
+            android:textSize="@dimen/sp_font_15"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/grayline"
+            android:layout_margin="@dimen/margin_1"
+            android:layout_height="@dimen/margin_1">
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:text="3.怎样查看节点数据?"
+            android:textSize="@dimen/sp_font_15"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/grayline"
+            android:layout_margin="@dimen/margin_1"
+            android:layout_height="@dimen/margin_1">
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:text="4.官家可以管理数据吗?"
+            android:textSize="@dimen/sp_font_15"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/layout_grayline_gray"
+        android:layout_height="@dimen/margin_50dp">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_weight="1.5"
+            android:layout_margin="@dimen/margin_1"
+            android:background="@color/white"
+            android:layout_height="match_parent"
+            >
+        </View>
+
+        <Button
+            android:layout_width="@dimen/margin_50dp"
+            android:text="发送"
+            android:textSize="@dimen/sp_font_15"
+            android:textColor="@color/white"
+            android:background="@color/color_3AB07D"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

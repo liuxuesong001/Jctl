@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:fitsSystemWindows="true"
+              android:background="@drawable/login_background"
+              android:layout_height="match_parent">
+
+
+    <include layout="@layout/include_login_toolbar"></include>
+
+
+    <com.colud.jctl.ui.custom.BottomScrollView
+
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/login_logo"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="@dimen/margin_63dp"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:background="@drawable/shape_login_zero"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_100dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_25dp"
+                android:layout_width="@dimen/margin_268.5dp"
+                android:layout_height="@dimen/margin_39.5dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/login_zh"
+                    android:layout_height="wrap_content"/>
+
+                <com.colud.jctl.utils.editview.EditTextWithDel
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName"
+                    android:background="@null"
+                    android:text=""
+                    android:hint=""
+                    android:layout_marginLeft="@dimen/margin_3dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:gravity="left|center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_font_15"
+                    android:id="@+id/login_user"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_25dp"
+                android:layout_width="@dimen/margin_268.5dp"
+                android:layout_height="@dimen/margin_39.5dp"
+                android:paddingLeft="@dimen/margin_25dp"
+                android:background="@drawable/shape_login_zero"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/login_passwd"
+                    android:layout_height="wrap_content"/>
+
+                <com.colud.jctl.utils.editview.EditTextWithDel
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    android:background="@null"
+                    android:text=""
+                    android:hint=""
+                    android:gravity="left|center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_font_15"
+                    android:layout_marginLeft="@dimen/margin_3dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:id="@+id/login_password"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_13dp"
+                android:layout_width="@dimen/margin_268.5dp"
+                android:paddingLeft="@dimen/margin_15dp"
+                android:paddingRight="@dimen/margin_15dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/remember_password"
+                    android:layout_width="@dimen/margin_15dp"
+                    android:layout_height="@dimen/margin_15dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:checked="true"
+                    android:button="@null"
+                    android:background="@drawable/checkbox_style_login"
+                    />
+
+                <TextView
+                    android:id="@+id/login_tv_jzmm"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="@dimen/margin_3dp"
+                    android:text="@string/login_test_jzpass"
+                    android:layout_toRightOf="@+id/remember_password"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/sp_font_9"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/login_wjmm"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/sp_font_9"
+                    android:text="@string/login_test_wjpass"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <!--登陆-->
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="@dimen/margin_268.5dp"
+                android:layout_height="@dimen/margin_39.5dp"
+                android:layout_marginTop="@dimen/margin_15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_login_btn"
+                android:text="@string/login_btn"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_font_15"/>
+
+            <ImageView
+                android:id="@+id/login_line_reg"
+                android:layout_width="@dimen/margin_268.5dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/mine_line_login"
+                android:layout_marginTop="@dimen/margin_26.5dp"
+                >
+            </ImageView>]
+
+        </LinearLayout>
+
+    </com.colud.jctl.ui.custom.BottomScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,251 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+//Properties props = new Properties()props.load(new FileInputStream(file("signing.properties")))
+
+def releaseTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+android {
+
+    lintOptions {
+        abortOnError false
+        // if true, only report errors
+//        ignoreWarnings true
+    }
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    signingConfigs {
+        //加载签名配置的文件
+//        def appStoreFile = System.getenv("STORE_FILE")
+//        def appStorePassword = System.getenv("STORE_PASSWORD")
+//        def appKeyAlias = System.getenv("KEY_ALIAS")
+//        def appKeyPassword = System.getenv("KEY_PASSWORD")
+//        def appKeyAlias = System.getenv("jctl")
+//        def appKeyPassword = System.getenv("123456")
+//        def appStoreFile = System.getenv("D:/AndroidProject/key/key.jks")
+//        def appStorePassword = System.getenv("123456")
+        key {
+            keyAlias 'jctl'
+            keyPassword '123456'
+            storeFile file('D:/Jctl/android/key/key.jks')
+            storePassword '123456'
+            // 作用是只使用旧版签名，禁用V2版签名模式
+            v2SigningEnabled false
+        }
+//
+//        //当不能从环境变量里获取到签名信息的时候，就使用项目中带的debug签名
+//        if(!appStoreFile||!appStorePassword||!appKeyAlias||!appKeyPassword){
+//            appStoreFile = "debug.keystore"
+//            appStorePassword = "android"
+//            appKeyAlias = "androiddebugkey"
+//            appKeyPassword = "android"
+//        }
+        //设置release的签名信息
+//        release {
+//            storeFile file(appStoreFile)
+//            storePassword appStorePassword
+//            keyAlias appKeyAlias
+//            keyPassword appKeyPassword
+//            storeFile file(storeFile)
+//            storePassword appStorePassword
+//            keyAlias appKeyAlias
+//            keyPassword appKeyPassword
+//        v2SigningEnabled false
+//            keyAlias props['KEY_ALIAS']
+//            keyPassword props['KEY_PASSWORD']
+//            storeFile file(props['KEYSTORE_FILE'])
+//            storePassword props['KEYSTORE_PASSWORD']
+//        }
+        debug {
+            keyAlias 'jctl'
+            keyPassword '123456'
+            storeFile file('D:/Jctl/android/key/key.jks')
+            storePassword '123456'
+            // 作用是只使用旧版签名，禁用V2版签名模式
+            v2SigningEnabled false
+        }
+    }
+    defaultConfig {
+        applicationId "com.jctl.colud"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 3
+        versionName "1.0.3"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        ndk {
+            abiFilters 'armeabi-v7a', 'armeabi', 'x86'
+        }
+        signingConfig signingConfigs.key
+    }
+    buildTypes {
+
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //实现自动签名
+            signingConfig signingConfigs.debug
+        }
+
+//        release {
+//            buildConfigField "boolean", "LOG_DEBUG", "false"
+//            minifyEnabled true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//
+//        release {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+
+        release {
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            minifyEnabled true
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.key
+
+//            applicationVariants.all { variant ->
+//                variant.outputs.each { output ->
+//                    def outputFile = output.outputFile
+//                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+//                        // 输出apk名称为boohee_v1.0_2015-01-15_wandoujia.apk
+//                        def fileName = "goodway_v${defaultConfig.versionName}_${releaseTime()}_${variant.productFlavors[0]}.apk"
+//                        output.outputFile = new File(outputFile.parent, fileName)
+//                    }
+//                }
+//            }
+        }
+
+    }
+    sourceSets {
+        main {
+
+//            jniLibs.srcDirs = ['src/main/jniLibs']
+
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    packagingOptions {
+
+        exclude 'META-INF/rxjava.properties'
+
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:appcompat-v7:25.0.3'
+    compile 'com.android.support:support-v4:25.0.3'
+    compile 'com.android.support:design:25.2.0'
+//    compile 'com.android.support:recyclerview-v7:25.0.3'
+//    compile 'com.android.support:gridlayout-v7:25.2.0'
+//    compile 'com.android.support:cardview-v7:25.0.3'
+    testCompile 'junit:junit:4.12'
+    /* butterknife */
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    /*Volley*/
+    compile 'com.android.volley:volley:1.0.0'
+    /*Glide*/
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    /*Gson*/
+    compile 'com.google.code.gson:gson:2.2.4'
+    /*banner*/
+    compile 'com.youth.banner:banner:1.4.9'
+    compile 'com.facebook.fresco:fresco:0.12.0'
+    compile 'com.zxy.android:recovery:0.0.8'
+    /*retrofit*/
+    //    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    //    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    //    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    //    compile 'com.squareup.okhttp3:logging-interceptor:3.3.1'
+    // 网络请求框架
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'com.squareup.retrofit2:converter-scalars:2.1.0'
+    /*okhttp3*/
+    //    compile 'com.squareup.okhttp3:okhttp:3.3.1'
+    //    compile 'com.squareup.okhttp3:okhttp-ws:3.3.1'
+    compile 'com.squareup.okhttp3:okhttp:3.5.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.5.0'
+    /*rxJava and rxAndroid*/
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.1.6'
+//    compile 'io.reactivex.rxjava2:rxjava:2.0.7'
+//    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    /*charts*/
+    compile 'com.github.lecho:hellocharts-library:1.5.8@aar'
+    /*circleimageview*/
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    /*swipeRecyclerView*/
+    compile 'com.yanzhenjie:recyclerview-swipe:1.0.4'
+    /*switchbutton 开关*/
+    compile 'com.github.zcweng:switch-button:0.0.3@aar'
+    compile 'com.github.arimorty:floatingsearchview:2.0.3'
+    /*条件对话框PickerView*/
+    compile 'com.contrarywind:Android-PickerView:3.2.4'
+    compile 'com.wx.wheelview:wheelview:1.3.3'
+    //    compile 'com.taro:headerrecycle:2.6.0'
+    //    compile 'com.dou361.dialogui:jjdxm-dialogui:1.0.3'
+    /*AndroidLog*/
+    compile 'com.github.zhaokaiqiang.klog:library:1.6.0'
+    /*Gif*/
+    compile 'com.roger.gifloadinglibrary:gifloadinglibrary:1.0.0'
+    /*williamchart*/
+    compile 'com.diogobernardino:williamchart:2.4.0'
+    //    compile 'com.github.XuDaojie:QRCode-Android:v0.4.0'
+    compile 'com.acker:simplezxing:1.2'
+    //内存溢出调试依赖
+    compile 'com.squareup.leakcanary:leakcanary-android:1.4-beta2'
+    //底部角标
+    compile 'q.rorbin:badgeview:1.1.2'
+    //数据库
+    compile 'org.litepal.android:core:1.6.0'
+    //过度动画
+    compile "com.andkulikov:transitionseverywhere:1.6.9"
+    //eventbus
+//    compile 'org.greenrobot:eventbus:3.1.1'
+    compile 'org.simple:androideventbus:1.0.5.1'
+
+    // 沉浸式状态栏
+    //    compile 'com.jaeger.statusbaruitl:library:1.3.6'
+    //版本更新
+    //    compile 'com.lzy.net:okhttpserver:0.1.7' //扩展了下载管理和上传管理，根据需要添加
+    //   随机颜色
+    //    compile 'com.github.lzyzsd.randomcolor:library:1.0.0'
+    //vlc 播放器
+    //    compile "de.mrmaffen:vlc-android-sdk:2.0.6"
+    //    compile 'com.yyl.vlc:vlc-android-sdk:1.3.0'
+    /*自定义Adapter包*/
+    compile project(':BaseAdapter')
+    /*视频播放器*/
+    compile project(':vlcplayer')
+    /*baidulibs*/
+    compile files('libs/BaiduLBS_Android.jar')
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+//        maven { url "http://repo1.maven.org/maven2" }
+        maven { url 'https://jitpack.io' }
+    }
+    dependencies {
+        classpath 'com.jakewharton:butterknife-gradle-plugin:8.2.1'
+    }
+}

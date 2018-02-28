@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.colud.jctl.ui.custom.SoftInputRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.colud.jctl.ui.custom.TitleBar
+        style="@style/toolbarStyleGreen"
+        android:id="@+id/title_toolbar">
+    </com.colud.jctl.ui.custom.TitleBar>
+
+    <com.colud.jctl.ui.custom.BottomScrollView
+        android:layout_below="@+id/title_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:paddingTop="@dimen/margin_10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/layout_grayline_white"
+                    android:paddingLeft="@dimen/margin_15dp"
+                    android:paddingRight="@dimen/margin_15dp"
+                    android:layout_height="@dimen/margin_50dp">
+
+                    <TextView
+                        android:layout_width="@dimen/margin_102.5dp"
+                        android:textSize="@dimen/sp_font_15"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:text="@string/tv_zwm"
+                        android:textColor="@color/color_CECECE"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/cropName"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/sp_font_15"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/color_343434"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:paddingLeft="@dimen/margin_15dp"
+                    android:paddingRight="@dimen/margin_15dp"
+                    android:layout_height="@dimen/margin_50dp">
+
+                    <TextView
+                        android:layout_width="@dimen/margin_102.5dp"
+                        android:textSize="@dimen/sp_font_15"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:text="@string/tv_tjsj"
+                        android:textColor="@color/color_CECECE"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/cropDate"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/sp_font_15"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/color_343434"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/grayline"
+                    android:layout_height="@dimen/margin_1">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:paddingLeft="@dimen/margin_15dp"
+                    android:paddingRight="@dimen/margin_15dp"
+                    android:layout_height="@dimen/margin_50dp">
+
+                    <TextView
+                        android:layout_width="@dimen/margin_102.5dp"
+                        android:textSize="@dimen/sp_font_15"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:text="@string/tv_tjren"
+                        android:textColor="@color/color_CECECE"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/cropRen"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/sp_font_15"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/color_343434"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/grayline"
+                    android:layout_height="@dimen/margin_1">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/margin_15dp"
+                    android:paddingRight="@dimen/margin_15dp"
+                    android:layout_height="@dimen/margin_50dp">
+
+                    <TextView
+                        android:layout_width="@dimen/margin_102.5dp"
+                        android:textSize="@dimen/sp_font_15"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:text="@string/tv_xgsj"
+                        android:textColor="@color/color_CECECE"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/cropAlterDate"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/sp_font_15"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/color_343434"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/layout_grayline_white"
+                    android:paddingLeft="@dimen/margin_15dp"
+                    android:paddingRight="@dimen/margin_15dp"
+                    android:layout_height="@dimen/margin_50dp">
+
+                    <TextView
+                        android:layout_width="@dimen/margin_102.5dp"
+                        android:textSize="@dimen/sp_font_15"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:text="@string/tv_xgren"
+                        android:textColor="@color/color_CECECE"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/cropAlterRen"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/sp_font_15"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/color_343434"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.colud.jctl.ui.custom.BottomScrollView>
+
+
+</com.colud.jctl.ui.custom.SoftInputRelativeLayout>

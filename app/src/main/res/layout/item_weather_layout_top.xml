@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_marginTop="@dimen/margin_50dp"
+              android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/weather_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="城市名称"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_font_40"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/weather_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7 ℃"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_font_30"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@mipmap/jctl_launcher"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/weather_wind_direction"
+            android:layout_width="wrap_content"
+            android:text="微风"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/jctl_launcher"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/humidity"
+            android:layout_width="wrap_content"
+            android:text="35 %"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.colud.jctl.ui.custom.bothway.CustomLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/margin_60dp"
+    android:gravity="center"
+    android:background="@drawable/layout_grayline_white"
+    android:layout_height="@dimen/margin_50dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/tv_title_id"
+        android:gravity="center"
+        android:textColor="@color/color_343434"
+        android:textSize="@dimen/sp_font_13"
+        android:layout_height="wrap_content"/>
+</com.colud.jctl.ui.custom.bothway.CustomLinearLayout>

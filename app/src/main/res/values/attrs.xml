@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="CircleHead">
+        <attr name="circleBorderHeadWidth" format="dimension"/>
+        <attr name="ringHeadColor" format="color"/>
+        <attr name="backgroundHeadColor" format="color"/>
+    </declare-styleable>
+
+    <!--自定义控件View-->
+    <declare-styleable name="TempCircleView">
+        <!--外圆的颜色-->
+        <attr name="outside_color" format="color"></attr>
+        <!--外圆的半径-->
+        <attr name="outside_radius" format="dimension"></attr>
+        <!--中间圆的颜色-->
+        <!--<attr name="inside_color" format="color"> </attr>-->
+        <!--中间圆的半径-->
+        <attr name="inside_radius" format="dimension"></attr>
+        <!--圆的总进度大小-->
+        <attr name="max_progress" format="integer"></attr>
+        <!--当前进度-->
+        <attr name="progress" format="float"></attr>
+        <!--进度是从哪开始-->
+        <attr name="direction" format="integer"></attr>
+        <!--文字显示的颜色-->
+        <attr name="progress_text_color" format="color"></attr>
+        <!--文字1大小-->
+        <attr name="progress_text_size_a" format="dimension"></attr>
+        <!--文字2大小-->
+        <attr name="progress_text_size_b" format="dimension"></attr>
+    </declare-styleable>
+
+    <!--EditView-->
+    <declare-styleable name="EditTextWithDel">
+        <attr name="android:textSize"/>
+        <attr name="android:textColor"/>
+        <attr name="android:textColorHint"/>
+        <attr name="android:maxLines"/>
+        <attr name="android:inputType"/>
+        <attr name="android:maxLength"/>
+        <attr name="android:drawableRight"/>
+        <attr name="android:drawablePadding"/>
+        <attr name="android:hint"/>
+        <attr name="android:text"/>
+        <attr name="android:ellipsize"/>
+        <attr name="android:cursorVisible"/>
+        <attr name="android:textColorLink"/>
+        <attr name="android:autoLink"/>
+        <attr name="android:gravity"/>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.colud.jctl.ui.custom.TitleBar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/toolbarStyleGreen"
+    android:id="@+id/title_toolbar">
+
+
+    <TextView
+        android:id="@+id/title_cotent"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/white"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:visibility="gone"
+        android:textSize="@dimen/sp_font_15"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/title_right_img"
+        android:layout_width="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/margin_15dp"
+        android:src="@drawable/add_right"
+        android:layout_height="wrap_content"/>
+
+
+</com.colud.jctl.ui.custom.TitleBar>

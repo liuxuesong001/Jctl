@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:fitsSystemWindows="true"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/include_login_toolbar"></include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_width="@dimen/margin_256dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/mine_welcome"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_font_20"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="@string/mine_welcome_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/margin_27dp"
+                android:textSize="@dimen/sp_font_15"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/farmers_layou_fram"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/farm"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="top"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:text="@string/mine_fram"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/margin_14dp"
+                        android:textSize="@dimen/sp_font_15"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <!--<ImageView-->
+                <!--android:id="@+id/farmers_img_fram"-->
+                <!--android:layout_width="@dimen/margin_15dp"-->
+                <!--android:src="@drawable/login_sex_y"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:layout_gravity="top"-->
+                <!--android:layout_height="@dimen/margin_15dp"/>-->
+
+                <CheckBox
+                    android:id="@+id/farmers_img_fram"
+                    android:layout_width="@dimen/margin_15dp"
+                    android:layout_gravity="top"
+                    android:gravity="center"
+                    android:layout_height="@dimen/margin_15dp"
+                    android:button="@null"
+                    android:checked="true"
+                    android:background="@drawable/checkbox_style_early"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/farmers_layou_boor"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/boor"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="top"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:text="@string/mine_boor"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/margin_14dp"
+                        android:textSize="@dimen/sp_font_15"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+                <!--<ImageView-->
+                <!--android:id="@+id/farmers_img_boor"-->
+                <!--android:layout_width="@dimen/margin_15dp"-->
+                <!--android:src="@drawable/login_sex_n"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:layout_gravity="top"-->
+                <!--android:layout_height="@dimen/margin_15dp"/>-->
+                <CheckBox
+                    android:id="@+id/farmers_img_boor"
+                    android:layout_width="@dimen/margin_15dp"
+                    android:layout_gravity="top"
+                    android:gravity="center"
+                    android:layout_height="@dimen/margin_15dp"
+                    android:button="@null"
+                    android:background="@drawable/checkbox_style_early"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

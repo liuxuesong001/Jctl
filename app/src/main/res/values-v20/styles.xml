@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--登录login-->
+
+    <!-- toolbar标题样式 -->
+    <style name="ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- toolbar菜单文字尺寸 -->
+    <style name="ToolbarMenuTextSize" parent="@style/TextAppearance.AppCompat.Menu">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+
+    <!-- toolbar菜单文字颜色 -->
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionMenuTextColor">@android:color/white</item>       <!-- 菜单文字颜色 -->
+        <item name="actionMenuTextAppearance">@style/ToolbarMenuTextSize</item>
+    </style>
+
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>  <!--把该属性改为false即可使menu位置位于toolbar之下-->
+    </style>
+
+    <!-- toolbar弹出菜单样式 -->
+    <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat">
+        <item name="android:colorBackground">#212121</item>             <!-- 弹窗菜单背景颜色 -->
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+    </style>
+
+    <style name="toolbarStyle" parent="Base.Widget.AppCompat.Toolbar">
+        <!--<item name="android:background">@color/colorPrimary</item>-->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:fitsSystemWindows">true</item>-->
+        <item name="theme">@style/ToolbarTheme</item>
+        <item name="popupTheme">@style/ToolbarPopupTheme</item>
+        <item name="titleTextAppearance">@style/ToolbarTitle</item>
+        <item name="android:minHeight">20dp</item>
+        <item name="maxButtonHeight">35dp</item>
+    </style>
+
+    <style name="toolbarStyleGreen" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/color_3AB07D</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:fitsSystemWindows">true</item>-->
+        <item name="theme">@style/ToolbarTheme</item>
+        <item name="popupTheme">@style/ToolbarPopupTheme</item>
+        <item name="titleTextAppearance">@style/ToolbarTitle</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="maxButtonHeight">48dp</item>
+    </style>
+
+    <style name="toolbarStyleBlack" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/black</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:fitsSystemWindows">true</item>-->
+        <item name="theme">@style/ToolbarTheme</item>
+        <item name="popupTheme">@style/ToolbarPopupTheme</item>
+        <item name="titleTextAppearance">@style/ToolbarTitle</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="maxButtonHeight">48dp</item>
+    </style>
+</resources>

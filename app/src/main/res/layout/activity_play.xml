@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <!--<org.videolan.libvlc.media.VideoView-->
+    <!--android:id="@+id/sfView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/margin_200dp"/>-->
+
+    <include layout="@layout/include_toolbar_title"></include>
+
+
+    <com.yyl.videolist.video.VlcVideoView
+        android:id="@+id/vlc"
+        android:layout_below="@+id/title_toolbar"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_200dp"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/vlc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="@string/shang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:id="@+id/up"/>
+
+
+        <Button
+            android:text="@string/xia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="160dp"
+            android:id="@+id/down"/>
+
+        <Button
+            android:text="@string/zuo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/up"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/left"/>
+
+        <Button
+            android:text="@string/you"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/left"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/right"/>
+
+        <Button
+            android:text="@string/max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/up"
+            android:layout_alignRight="@+id/right"
+            android:layout_alignEnd="@+id/right"
+            android:id="@+id/max"/>
+
+        <Button
+            android:text="@string/min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/min"
+            android:layout_above="@+id/left"
+            android:layout_alignLeft="@+id/left"
+            android:layout_alignStart="@+id/left"/>
+
+        <!--<Button-->
+        <!--android:text="@string/stop"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="92dp"-->
+        <!--android:id="@+id/stop"/>-->
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

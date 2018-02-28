@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:id="@+id/ll_adapter_bj"
+              android:paddingLeft="@dimen/margin_10dp"
+              android:layout_height="@dimen/margin_40dp">
+
+
+    <LinearLayout
+        android:id="@+id/node_ll_a"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:background="@drawable/selector_include_farm"
+        android:layout_height="20dp">
+
+
+        <com.colud.jctl.ui.custom.MyTextView
+            android:id="@+id/node_item_nodeName"
+            android:layout_width="@dimen/margin_60dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:focusable="true"
+            android:marqueeRepeatLimit="-1"
+            android:ellipsize="marquee"
+            android:textColor="@color/color_343434"
+            android:textSize="@dimen/sp_font_12"
+            android:layout_height="match_parent"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/include_in"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/node_ll_b"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:background="@drawable/shape_include"
+        android:layout_height="20dp">
+
+
+        <com.colud.jctl.ui.custom.MyTextView
+            android:id="@+id/node_item_farmername"
+            android:layout_width="@dimen/margin_60dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:focusable="true"
+            android:marqueeRepeatLimit="-1"
+            android:ellipsize="marquee"
+            android:textColor="@color/color_343434"
+            android:textSize="@dimen/sp_font_12"
+            android:layout_height="match_parent"/>
+
+
+        <ImageView
+            android:id="@+id/node_img_b"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/include_in"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/node_ll_c"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:background="@drawable/shape_include"
+        android:layout_height="20dp">
+
+
+        <com.colud.jctl.ui.custom.MyTextView
+            android:id="@+id/node_item_nh"
+            android:layout_width="@dimen/margin_60dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:focusable="true"
+            android:marqueeRepeatLimit="-1"
+            android:ellipsize="marquee"
+            android:textColor="@color/color_343434"
+            android:textSize="@dimen/sp_font_12"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/node_ll_d"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:background="@drawable/shape_include"
+        android:layout_height="20dp">
+
+
+        <TextView
+            android:id="@+id/node_item_powersupply"
+            android:layout_width="@dimen/margin_60dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:focusable="true"
+            android:marqueeRepeatLimit="-1"
+            android:ellipsize="marquee"
+            android:textColor="@color/color_343434"
+            android:textSize="@dimen/sp_font_12"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

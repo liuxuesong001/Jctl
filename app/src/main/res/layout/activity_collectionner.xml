@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_height="match_parent">
+
+    <com.colud.jctl.ui.custom.TitleBar
+        style="@style/toolbarStyleGreen"
+        android:id="@+id/login_toolbar">
+
+        <TextView
+            android:id="@+id/title_cotent"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:textColor="@color/white"
+            android:layout_gravity="end|top"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:textSize="@dimen/sp_font_15"
+            android:layout_height="wrap_content"/>
+
+
+    </com.colud.jctl.ui.custom.TitleBar>
+
+    <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+        android:id="@+id/coll_rv"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView>
+
+    <LinearLayout
+        android:id="@+id/coll_btm_delete"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@drawable/layout_grayline_gray"
+        android:layout_height="@dimen/margin_48dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_delete"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/early_delete"
+            android:layout_marginTop="@dimen/margin_3dp"
+            android:textSize="@dimen/sp_font_15"
+            android:textColor="@color/color_A6A6A6"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

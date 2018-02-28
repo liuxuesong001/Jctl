@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.colud.jctl.ui.custom.TitleBar
+        style="@style/toolbarStyleGreen"
+        android:id="@+id/login_toolbar">
+
+        <TextView
+            android:id="@+id/title_cotent"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:textColor="@color/white"
+            android:layout_gravity="end|top"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:textSize="@dimen/sp_font_15"
+            android:layout_height="wrap_content"/>
+
+
+    </com.colud.jctl.ui.custom.TitleBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/change_phone"
+            android:layout_width="match_parent"
+            android:hint="@string/change_hint_mobile"
+            android:textSize="@dimen/sp_font_15"
+            android:textColor="@color/color_343434"
+            android:maxLength="11"
+            android:paddingLeft="@dimen/margin_15dp"
+            android:inputType="phone"
+            android:textColorHint="@color/color_CECECE"
+            android:background="@drawable/layout_grayline_white"
+            android:layout_height="@dimen/margin_50dp"/>
+
+        <EditText
+            android:id="@+id/change_pass"
+            android:layout_width="match_parent"
+            android:hint="@string/change_hint_pass"
+            android:textSize="@dimen/sp_font_15"
+            android:textColor="@color/color_343434"
+            android:paddingLeft="@dimen/margin_15dp"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColorHint="@color/color_CECECE"
+            android:background="@drawable/layout_grayline_white"
+            android:layout_height="@dimen/margin_50dp"/>
+
+        <EditText
+            android:id="@+id/change_passqr"
+            android:layout_width="match_parent"
+            android:hint="@string/change_hint_passqr"
+            android:textSize="@dimen/sp_font_15"
+            android:textColor="@color/color_343434"
+            android:paddingLeft="@dimen/margin_15dp"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColorHint="@color/color_CECECE"
+            android:background="@drawable/layout_grayline_white"
+            android:layout_height="@dimen/margin_50dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/margin_15dp"
+            android:paddingRight="@dimen/margin_15dp"
+            android:background="@drawable/layout_grayline_white"
+            android:layout_height="@dimen/margin_50dp">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="left|center"
+                android:textColor="@color/color_343434"
+                android:hint="@string/mine_code"
+                android:textColorHint="@color/color_CECECE"
+                android:textSize="@dimen/sp_font_15"
+                android:id="@+id/change_code"/>
+
+            <Button
+                android:id="@+id/change_btnSendCode"
+                android:layout_width="@dimen/margin_100dp"
+                android:layout_height="@dimen/margin_25dp"
+                android:background="@drawable/shape_login_btn_gary"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_3AB07D"
+                android:textSize="@dimen/sp_font_13"
+                android:text="@string/mine_sendcode"
+                />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/change_confirm"
+            android:layout_marginTop="@dimen/margin_28dp"
+            android:layout_width="@dimen/margin_149.5dp"
+            android:layout_height="@dimen/margin_29dp"
+            android:layout_gravity="center"
+            android:text="@string/tv_qd"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_font_15"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:background="@drawable/shape_layout_hgreen"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
